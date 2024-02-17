@@ -1,0 +1,62 @@
+#include <stdio.h>
+int main(void)
+{
+	uint32_t *regmap = (uint32_t *) 0x70000000;
+	//regmap[0]=1//A
+	//regmap[1]=1//B
+	//regmap[2]=1//SHAMT
+	//regmap[3]=1//ALUOp
+	//reg4in is zero
+	//reg5in is overflow
+	//reg0in is R
+
+
+	//Signed Add
+	regmap[0]=-10;
+	regmap[1]=-8;
+	regmap[3]=4;
+	uint32_t expected_result = -18;
+	uint32_t result = regmap[0];
+	if (result == expected_result) {
+	  printf("Signed Add Success\n");
+	} else {
+	  printf("Signed Add Failed\n");
+	}
+
+	//Unsigned Add
+	regmap[0]=8;
+	regmap[1]=2;
+	regmap[3]=5;
+	expected_result=10;
+	result = regmap[0];
+	if (result == expected_result) {
+	  printf("Unsigned Add Success\n");
+	} else {
+	  printf("Unsigned Add Failed\n");
+	}
+	return 0;
+
+	//Signed Sub
+	regmap[0]=2;
+	regmap[1]=-8;
+	regmap[3]=6;
+	expected_result = 10;
+	result = regmap[0];
+	if (result == expected_result) {
+	  printf("Signed Sub Success\n");
+	} else {
+	  printf("Signed Sub Failed\n");
+	}
+	//Unsigned Sub
+	regmap[0]=8;
+	regmap[1]=8;
+	regmap[3]=7;
+	expected_result=0;
+	result = regmap[0];
+	if (result == expected_result) {
+	  printf("Unsigned Sub Success\n");
+	} else {
+	  printf("Unsigned Sub Failed\n");
+	}
+	}
+}

@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main(void)
+{
+	uint32_t *regmap=(uint32_t*)0x70000000;
+	//sets the reset to 1
+	//Reg[0] = high
+	//Reg[1] = lo
+	//Reg[2] = done
+
+	regmap[0]=8;
+	regmap[1]=8;
+
+	for (int i=0; i<100; i++)
+	{
+
+	}
+	regmap[2]=1;
+	for (int i=0; i<100; i++)
+	{
+
+	}
+	regmap[2]=0;
+	while (regmap[2]!=1)
+	{
+	}
+	if (regmap[1]==64)
+	{
+		printf("\n 8*8: Success");
+	}
+	else
+	{
+		printf("\n 8**: Failed");
+	}
+}

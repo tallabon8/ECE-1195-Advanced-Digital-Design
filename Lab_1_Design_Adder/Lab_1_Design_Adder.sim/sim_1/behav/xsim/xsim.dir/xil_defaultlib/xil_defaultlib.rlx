@@ -1,0 +1,10 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+C:/Users/travisallabon/Lab_1_Design_Adder/Lab_1_Design_Adder.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,axi_vip_v1_1_4;processing_system7_vip_v1_0_6;xilinx_vip,,,,,,
+C:/Users/travisallabon/Lab_1_Design_Adder/Lab_1_Design_Adder.srcs/sim_1/new/testbench.vhd,1695071964,vhdl,,,,addsub_testbench,,,,,,,,
+C:/Users/travisallabon/Lab_1_Design_Adder/Lab_1_Design_Adder.srcs/sim_1/new/testbench2.vhd,1695133631,vhdl,,,,testbench2,,,,,,,,
+C:/Users/travisallabon/Lab_1_Design_Adder/Lab_1_Design_Adder.srcs/sources_1/new/adder32bit.vhd,1695142484,vhdl,,,,adder32bit,,,,,,,,
+C:/Users/travisallabon/Lab_1_Design_Adder/Lab_1_Design_Adder.srcs/sources_1/new/adder_subtractor.vhd,1695067869,vhdl,,,,addersubtractor,,,,,,,,
+C:/Users/travisallabon/Lab_1_Design_Adder/Lab_1_Design_Adder.srcs/sources_1/new/fulladder.vhd,1695142483,vhdl,,,,fulladder,,,,,,,,

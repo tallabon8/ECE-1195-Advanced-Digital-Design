@@ -1,0 +1,10 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Lab_4_Inshallah.srcs/sources_1/imports/src/Arith_Unit.vhd" \
+"../../../../Lab_4_Inshallah.srcs/sources_1/imports/new/Logical.vhd" \
+"../../../../Lab_4_Inshallah.srcs/sources_1/imports/new/comparator_unit.vhd" \
+"../../../../Lab_4_Inshallah.srcs/sources_1/imports/new/shifter_unit.vhd" \
+"../../../../Lab_4_Inshallah.srcs/sources_1/imports/new/ALU.vhd" \
+
+# Do not sort compile order
+nosort

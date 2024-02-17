@@ -1,0 +1,105 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 6.8.11  2018-08-07 bk=1.4403 VDI=40 GEI=35 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port CLK_0 -pg 1 -y 250 -defaultsOSRD
+preplace port RST_0 -pg 1 -y -260 -defaultsOSRD
+preplace inst Two2one_1bit_mux_0 -pg 1 -lvl 2 -y -50 -defaultsOSRD -orient R180
+preplace inst HILO_reg_0 -pg 1 -lvl 7 -y -320 -defaultsOSRD
+preplace inst xlslice_0 -pg 1 -lvl 8 -y 720 -defaultsOSRD
+preplace inst Control_Unit_8_0 -pg 1 -lvl 4 -y -570 -defaultsOSRD
+preplace inst HILO_reg_1 -pg 1 -lvl 7 -y -110 -defaultsOSRD
+preplace inst xlslice_1 -pg 1 -lvl 8 -y 820 -defaultsOSRD
+preplace inst register_file_8_0 -pg 1 -lvl 6 -y 390 -defaultsOSRD
+preplace inst count_leading_ones_0 -pg 1 -lvl 10 -y 460 -defaultsOSRD
+preplace inst PC_8_0 -pg 1 -lvl 1 -y 330 -defaultsOSRD
+preplace inst Shift_Left_2_8_0 -pg 1 -lvl 6 -y 650 -defaultsOSRD
+preplace inst ALU_0 -pg 1 -lvl 9 -y 270 -defaultsOSRD
+preplace inst two2one_mux_8_0 -pg 1 -lvl 2 -y 400 -defaultsOSRD
+preplace inst Memory_Data_Register_0 -pg 1 -lvl 3 -y 680 -defaultsOSRD
+preplace inst fivebit_2to1_mux_8_0 -pg 1 -lvl 4 -y 360 -defaultsOSRD
+preplace inst fivebit_2to1_mux_8_1 -pg 1 -lvl 5 -y 980 -defaultsOSRD
+preplace inst ALUOut_8_0 -pg 1 -lvl 10 -y 310 -defaultsOSRD
+preplace inst two2one_mux_8_2 -pg 1 -lvl 8 -y 220 -defaultsOSRD
+preplace inst two2one_mux_8_3 -pg 1 -lvl 11 -y 390 -defaultsOSRD
+preplace inst Reg_B_8_0 -pg 1 -lvl 7 -y 490 -defaultsOSRD
+preplace inst Multiplier_32_bit_0 -pg 1 -lvl 7 -y 770 -defaultsOSRD
+preplace inst Reg_A_8_0 -pg 1 -lvl 7 -y 310 -defaultsOSRD
+preplace inst four2three_mux_8_0 -pg 1 -lvl 11 -y 70 -defaultsOSRD
+preplace inst andGateorGate_0 -pg 1 -lvl 2 -y -230 -defaultsOSRD -orient R180
+preplace inst Shift_Left_2_28_8_0 -pg 1 -lvl 6 -y 100 -defaultsOSRD
+preplace inst loading_mux_0 -pg 1 -lvl 4 -y 520 -defaultsOSRD
+preplace inst Instruction_Register_0 -pg 1 -lvl 3 -y 380 -defaultsOSRD
+preplace inst four2two_mux_8_0 -pg 1 -lvl 8 -y 400 -defaultsOSRD
+preplace inst CPU_memory_0 -pg 1 -lvl 1 -y 680 -defaultsOSRD
+preplace inst Sign_Extend_8_0 -pg 1 -lvl 4 -y 660 -defaultsOSRD
+preplace netloc CPU_memory_0_dataOut 1 1 2 NJ 680 430
+preplace netloc Two2one_1bit_mux_0_R 1 1 2 90 -150 400
+preplace netloc Control_Unit_8_0_AWrite 1 4 3 NJ -600 N -600 2270
+preplace netloc Control_Unit_8_0_RegDst 1 3 2 870 -880 1320
+preplace netloc ALU_0_zero 1 2 8 400J -20 NJ -20 NJ -20 NJ -20 NJ -20 NJ -20 NJ -20 3240
+preplace netloc four2three_mux_8_0_R 1 0 12 -490J 790 NJ 790 NJ 790 NJ 790 1400J 580 NJ 580 2180J 620 NJ 620 NJ 620 NJ 620 NJ 620 3850
+preplace netloc Shift_Left_2_8_0_Shift_2_Out 1 6 2 2240 640 2660J
+preplace netloc Reg_A_8_0_A_Q 1 6 4 2290 400 2640 490 3000 460 N
+preplace netloc four2two_mux_8_0_R 1 8 1 2940
+preplace netloc Instruction_Register_0_Instr15to11 1 3 1 830
+preplace netloc Instruction_Register_0_Instr25to21 1 3 3 790J 280 N 280 1650
+preplace netloc Instruction_Register_0_Inst10to6 1 3 2 760J 750 1350
+preplace netloc Instruction_Register_0_Instr31to26 1 3 1 760
+preplace netloc Sign_Extend_8_0_DataInstructionOut 1 4 4 N 660 1670 720 2240 660 2650
+preplace netloc HILO_reg_1_Q 1 3 5 870 720 1390J 570 NJ 570 2200J 580 2590J
+preplace netloc fivebit_2to1_mux_8_0_R 1 4 2 N 360 1640
+preplace netloc CLK_0_1 1 0 10 -500J 220 NJ 220 420J 220 780J 220 N 220 1680 240 2220 610 N 610 2980 370 3270
+preplace netloc Control_Unit_8_0_ZeroEN 1 2 3 NJ -70 NJ -70 1290
+preplace netloc loading_mux_0_R 1 4 2 1360J 450 NJ
+preplace netloc Control_Unit_8_0_ALUsrcA 1 4 4 NJ -720 NJ -720 NJ -720 2660
+preplace netloc Control_Unit_8_0_LOIN 1 4 3 N -340 N -340 2230
+preplace netloc Control_Unit_8_0_ALUsrcB 1 4 4 NJ -520 NJ -520 NJ -520 2630
+preplace netloc Control_Unit_8_0_MDREN 1 2 3 440 770 NJ 770 1320
+preplace netloc Control_Unit_8_0_CLOEN 1 4 7 NJ -380 NJ -380 2260J -230 NJ -230 NJ -230 NJ -230 3580
+preplace netloc register_file_8_0_ReadData1 1 6 1 2200
+preplace netloc register_file_8_0_ReadData2 1 6 1 2200
+preplace netloc Control_Unit_8_0_PCWriteCond 1 2 3 N -230 N -230 1350
+preplace netloc Control_Unit_8_0_IorD 1 1 4 120 230 410J 210 NJ 210 1340
+preplace netloc PC_8_0_PC_Q 1 1 7 110 200 N 200 N 200 N 200 N 200 N 200 N
+preplace netloc Reg_A_8_0_A4to0 1 4 4 1400 860 NJ 860 NJ 860 2600
+preplace netloc Control_Unit_8_0_ALUWrite 1 4 6 NJ -660 NJ -660 NJ -660 NJ -660 NJ -660 3280
+preplace netloc xlslice_1_Dout 1 6 3 2290 220 2620 310 2930J
+preplace netloc ALUOut_8_0_ALUOut 1 1 10 130 240 NJ 240 820 240 1370J 210 NJ 210 NJ 210 2650J 300 2950J 360 3250J 220 3570
+preplace netloc xlslice_0_Dout 1 6 3 2280 600 N 600 2920J
+preplace netloc ALU_0_R 1 9 3 3290 210 3590 210 3840
+preplace netloc Control_Unit_8_0_RegWrite 1 4 2 N -700 1690
+preplace netloc Control_Unit_8_0_SL28EN 1 4 2 N -620 1700
+preplace netloc Control_Unit_8_0_MemtoReg 1 3 2 840J -890 1330
+preplace netloc andGateorGate_0_R 1 0 2 -490J -230 NJ
+preplace netloc Instruction_Register_0_Funct 1 3 1 800
+preplace netloc Instruction_Register_0_Instr15to0 1 3 1 790
+preplace netloc ALU_0_R1 1 9 2 3260J 400 3590
+preplace netloc PC_8_0_PC31to28 1 1 10 90 170 NJ 170 NJ 170 NJ 170 NJ 170 2210J 100 NJ 100 NJ 100 NJ 100 NJ
+preplace netloc Instruction_Register_0_Instr25to0 1 3 3 810 110 NJ 110 NJ
+preplace netloc Reg_B_8_0_B_Q 1 0 8 -470 780 N 780 N 780 N 780 N 780 N 780 2180 630 2620
+preplace netloc Control_Unit_8_0_SL32EN 1 4 2 N -640 1670
+preplace netloc Control_Unit_8_0_SHAMTEN 1 4 1 1380
+preplace netloc two2one_mux_8_2_R 1 8 1 2940
+preplace netloc Control_Unit_8_0_PCSource 1 4 7 NJ -540 NJ -540 NJ -540 NJ -540 NJ -540 NJ -540 3600
+preplace netloc RST_0_1 1 0 10 -510J 210 NJ 210 400J 510 770J 270 N 270 1700 270 2250 590 N 590 2990 380 3280
+preplace netloc Control_Unit_8_0_MultEN 1 4 3 NJ -320 NJ -320 2190
+preplace netloc Control_Unit_8_0_BWrite 1 4 3 NJ -580 N -580 2240
+preplace netloc Memory_Data_Register_0_MemRegOut 1 3 1 810
+preplace netloc HILO_reg_0_Q 1 3 5 860 740 NJ 740 NJ 740 2260J 650 2610J
+preplace netloc Control_Unit_8_0_MemWrite 1 0 5 -480 240 100J 250 NJ 250 NJ 250 1360
+preplace netloc Control_Unit_8_0_PCWrite 1 2 3 N -250 N -250 1300
+preplace netloc Control_Unit_8_0_ALUOp 1 4 5 NJ -500 NJ -500 NJ -500 NJ -500 2960
+preplace netloc Multiplier_32_bit_0_DONE 1 3 5 850 730 NJ 730 NJ 730 2280J 680 2590
+preplace netloc Control_Unit_8_0_HIEN 1 4 3 NJ -360 NJ -360 2250
+preplace netloc Multiplier_32_bit_0_R 1 7 1 2630
+preplace netloc fivebit_2to1_mux_8_1_R 1 5 4 1670 880 NJ 880 NJ 880 2970J
+preplace netloc Instruction_Register_0_Instr20to16 1 3 3 780 260 N 260 1660
+preplace netloc Control_Unit_8_0_IRWrite 1 2 3 430 230 NJ 230 1310
+preplace netloc Shift_Left_2_28_8_0_Shift_2_Out 1 6 5 2200 80 NJ 80 NJ 80 NJ 80 NJ
+preplace netloc two2one_mux_8_0_R 1 0 3 -470 480 NJ 480 390
+preplace netloc count_leading_ones_0_CLO_out 1 10 1 3600
+levelinfo -pg 1 -530 -50 280 600 1100 1540 2020 2450 2800 3120 3430 3720 3870 -top -980 -bot 1390
+"
+}
+0

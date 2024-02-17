@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../Lab_3.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../Lab_3.srcs/sources_1/bd/design_1/ipshared/70cf/hdl" --include "C:/Xilinx/Vivado/2018.3/data/xilinx_vip/include" \
+"../../../../Lab_3.ip_user_files/bd/design_1/ip/design_1_processing_system7_0_0/sim/design_1_processing_system7_0_0.v" \
+"../../../../Lab_3.ip_user_files/bd/design_1/ip/design_1_xlslice_0_0/sim/design_1_xlslice_0_0.v" \
+"../../../../Lab_3.ip_user_files/bd/design_1/ip/design_1_xlslice_1_0/sim/design_1_xlslice_1_0.v" \
+"../../../../Lab_3.ip_user_files/bd/design_1/ip/design_1_auto_pc_0/sim/design_1_auto_pc_0.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

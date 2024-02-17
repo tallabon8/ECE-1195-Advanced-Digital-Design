@@ -1,0 +1,85 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto ef4169f4e3c14d0086b5f402ee85ad01 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xlslice_v1_0_1 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot datapath_wrapper_behav xil_defaultlib.datapath_wrapper xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.ALUOut_8 [aluout_8_default]
+Compiling architecture datapath_aluout_8_0_0_arch of entity xil_defaultlib.datapath_ALUOut_8_0_0 [datapath_aluout_8_0_0_default]
+Compiling architecture behavioral of entity xil_defaultlib.Logical [logical_default]
+Compiling architecture struct of entity xil_defaultlib.Arith_Unit [arith_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.comparator_unit [comparator_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.shifter_unit [shifter_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.ALU [alu_default]
+Compiling architecture datapath_alu_0_0_arch of entity xil_defaultlib.datapath_ALU_0_0 [datapath_alu_0_0_default]
+Compiling architecture behavioral of entity xil_defaultlib.Control_Unit_8 [control_unit_8_default]
+Compiling architecture datapath_control_unit_8_0_0_arch of entity xil_defaultlib.datapath_Control_Unit_8_0_0 [datapath_control_unit_8_0_0_defa...]
+Compiling architecture behavioral of entity xil_defaultlib.HILO_reg [hilo_reg_default]
+Compiling architecture datapath_hilo_reg_0_0_arch of entity xil_defaultlib.datapath_HILO_reg_0_0 [datapath_hilo_reg_0_0_default]
+Compiling architecture datapath_hilo_reg_1_0_arch of entity xil_defaultlib.datapath_HILO_reg_1_0 [datapath_hilo_reg_1_0_default]
+Compiling architecture behavioral of entity xil_defaultlib.Instruction_Register_8 [instruction_register_8_default]
+Compiling architecture datapath_instruction_register_0_0_arch of entity xil_defaultlib.datapath_Instruction_Register_0_0 [datapath_instruction_register_0_...]
+Compiling architecture behavioral of entity xil_defaultlib.Memory_Data_Register_8 [memory_data_register_8_default]
+Compiling architecture datapath_memory_data_register_0_0_arch of entity xil_defaultlib.datapath_Memory_Data_Register_0_0 [datapath_memory_data_register_0_...]
+Compiling architecture behavioral of entity xil_defaultlib.counter5bit [counter5bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.shift32bit [shift32bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.shift64bit [shift64bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.flipflop64bit [flipflop64bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.adder64bit [adder64bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.control_unit [control_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Multiplier_32_bit [multiplier_32_bit_default]
+Compiling architecture datapath_multiplier_32_bit_0_0_arch of entity xil_defaultlib.datapath_Multiplier_32_bit_0_0 [datapath_multiplier_32_bit_0_0_d...]
+Compiling architecture behavioral of entity xil_defaultlib.PC_8 [pc_8_default]
+Compiling architecture datapath_pc_8_0_0_arch of entity xil_defaultlib.datapath_PC_8_0_0 [datapath_pc_8_0_0_default]
+Compiling architecture behavioral of entity xil_defaultlib.Reg_A_8 [reg_a_8_default]
+Compiling architecture datapath_reg_a_8_0_0_arch of entity xil_defaultlib.datapath_Reg_A_8_0_0 [datapath_reg_a_8_0_0_default]
+Compiling architecture behavioral of entity xil_defaultlib.Reg_B_8 [reg_b_8_default]
+Compiling architecture datapath_reg_b_8_0_0_arch of entity xil_defaultlib.datapath_Reg_B_8_0_0 [datapath_reg_b_8_0_0_default]
+Compiling architecture behavioral of entity xil_defaultlib.Shift_Left_2_28_8 [shift_left_2_28_8_default]
+Compiling architecture datapath_shift_left_2_28_8_0_0_arch of entity xil_defaultlib.datapath_Shift_Left_2_28_8_0_0 [datapath_shift_left_2_28_8_0_0_d...]
+Compiling architecture behavioral of entity xil_defaultlib.Shift_Left_2_8 [shift_left_2_8_default]
+Compiling architecture datapath_shift_left_2_8_0_0_arch of entity xil_defaultlib.datapath_Shift_Left_2_8_0_0 [datapath_shift_left_2_8_0_0_defa...]
+Compiling architecture behavioral of entity xil_defaultlib.Sign_Extend_8 [sign_extend_8_default]
+Compiling architecture datapath_sign_extend_8_0_0_arch of entity xil_defaultlib.datapath_Sign_Extend_8_0_0 [datapath_sign_extend_8_0_0_defau...]
+Compiling architecture behavioral of entity xil_defaultlib.Two2one_1bit_mux [two2one_1bit_mux_default]
+Compiling architecture datapath_two2one_1bit_mux_0_0_arch of entity xil_defaultlib.datapath_Two2one_1bit_mux_0_0 [datapath_two2one_1bit_mux_0_0_de...]
+Compiling architecture behavioral of entity xil_defaultlib.andGateorGate [andgateorgate_default]
+Compiling architecture datapath_andgateorgate_0_0_arch of entity xil_defaultlib.datapath_andGateorGate_0_0 [datapath_andgateorgate_0_0_defau...]
+Compiling architecture behavioral of entity xil_defaultlib.count_leading_ones [count_leading_ones_default]
+Compiling architecture datapath_count_leading_ones_0_0_arch of entity xil_defaultlib.datapath_count_leading_ones_0_0 [datapath_count_leading_ones_0_0_...]
+Compiling architecture behavioral of entity xil_defaultlib.dummyMemory [dummymemory_default]
+Compiling architecture datapath_dummymemory_0_0_arch of entity xil_defaultlib.datapath_dummyMemory_0_0 [datapath_dummymemory_0_0_default]
+Compiling architecture behavioral of entity xil_defaultlib.fivebit_2to1_mux_8 [fivebit_2to1_mux_8_default]
+Compiling architecture datapath_fivebit_2to1_mux_8_0_0_arch of entity xil_defaultlib.datapath_fivebit_2to1_mux_8_0_0 [datapath_fivebit_2to1_mux_8_0_0_...]
+Compiling architecture datapath_fivebit_2to1_mux_8_1_0_arch of entity xil_defaultlib.datapath_fivebit_2to1_mux_8_1_0 [datapath_fivebit_2to1_mux_8_1_0_...]
+Compiling architecture behavioral of entity xil_defaultlib.four2three_mux_8 [four2three_mux_8_default]
+Compiling architecture datapath_four2three_mux_8_0_0_arch of entity xil_defaultlib.datapath_four2three_mux_8_0_0 [datapath_four2three_mux_8_0_0_de...]
+Compiling architecture behavioral of entity xil_defaultlib.four2two_mux_8 [four2two_mux_8_default]
+Compiling architecture datapath_four2two_mux_8_0_0_arch of entity xil_defaultlib.datapath_four2two_mux_8_0_0 [datapath_four2two_mux_8_0_0_defa...]
+Compiling architecture behavioral of entity xil_defaultlib.loading_mux [loading_mux_default]
+Compiling architecture datapath_loading_mux_0_0_arch of entity xil_defaultlib.datapath_loading_mux_0_0 [datapath_loading_mux_0_0_default]
+Compiling architecture behavioral of entity xil_defaultlib.register_file_8 [register_file_8_default]
+Compiling architecture datapath_register_file_8_0_0_arch of entity xil_defaultlib.datapath_register_file_8_0_0 [datapath_register_file_8_0_0_def...]
+Compiling architecture behavioral of entity xil_defaultlib.two2one_mux_8 [two2one_mux_8_default]
+Compiling architecture datapath_two2one_mux_8_0_0_arch of entity xil_defaultlib.datapath_two2one_mux_8_0_0 [datapath_two2one_mux_8_0_0_defau...]
+Compiling architecture datapath_two2one_mux_8_2_0_arch of entity xil_defaultlib.datapath_two2one_mux_8_2_0 [datapath_two2one_mux_8_2_0_defau...]
+Compiling architecture datapath_two2one_mux_8_3_0_arch of entity xil_defaultlib.datapath_two2one_mux_8_3_0 [datapath_two2one_mux_8_3_0_defau...]
+Compiling module xlslice_v1_0_1.xlslice_v1_0_1_xlslice(DIN_WIDTH...
+Compiling module xil_defaultlib.datapath_xlslice_0_0
+Compiling module xlslice_v1_0_1.xlslice_v1_0_1_xlslice(DIN_WIDTH...
+Compiling module xil_defaultlib.datapath_xlslice_1_0
+Compiling architecture structure of entity xil_defaultlib.datapath [datapath_default]
+Compiling architecture structure of entity xil_defaultlib.datapath_wrapper
+Built simulation snapshot datapath_wrapper_behav

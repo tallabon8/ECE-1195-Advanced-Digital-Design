@@ -1,0 +1,19 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Lab_3.srcs/sources_1/new/Multiplier_32_bit.vhd" \
+"../../../../Lab_3.srcs/sources_1/new/adder64bit.vhd" \
+"../../../../Lab_3.srcs/sim_1/new/adder64bit_tb.vhd" \
+"../../../../Lab_3.srcs/sources_1/new/control_unit.vhd" \
+"../../../../Lab_3.srcs/sim_1/new/control_unit_tb.vhd" \
+"../../../../Lab_3.srcs/sources_1/new/counter5bit.vhd" \
+"../../../../Lab_3.srcs/sources_1/imports/Downloads/flipflop.vhd" \
+"../../../../Lab_3.srcs/sources_1/new/fulladder.vhd" \
+"../../../../Lab_3.srcs/sim_1/new/multiplier_32_bit_tb.vhd" \
+"../../../../Lab_3.srcs/sim_1/new/register_tb.vhd" \
+"../../../../Lab_3.srcs/sources_1/new/shift32bit.vhd" \
+"../../../../Lab_3.srcs/sim_1/new/shift32bit_tb.vhd" \
+"../../../../Lab_3.srcs/sources_1/new/shift64bit.vhd" \
+"../../../../Lab_3.srcs/sim_1/new/shift64bit_tb.vhd" \
+
+# Do not sort compile order
+nosort

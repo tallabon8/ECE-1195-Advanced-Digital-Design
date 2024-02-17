@@ -1,0 +1,1834 @@
+18:44:22 **** Build of project Lab1_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_8/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_10/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_10/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_8/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling coresightps_dcc"
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_8/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling emacps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_10/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_10/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling sdps"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_8/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling standalone"
+In file included from usleep.c:56:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xil_sleeptimer.c:51:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xtime_l.c:49:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from sleep.c:53:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling usbps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling xadcps"
+'Finished building libraries'
+
+**** Build of configuration Debug for project Lab1 ****
+
+Nothing to build for project Lab1
+
+****  of configuration Debug for project Lab1 ****
+
+Nothing to build for project Lab1
+18:45:30 **** Build of project lab1_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_8/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_10/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_10/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_8/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling coresightps_dcc"
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_8/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling emacps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_10/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_10/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling sdps"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_8/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling standalone"
+In file included from usleep.c:56:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xil_sleeptimer.c:51:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xtime_l.c:49:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from sleep.c:53:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling usbps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling xadcps"
+'Finished building libraries'
+18:45:52 **** Build of configuration Debug for project lab1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: lab1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lab1_bsp/ps7_cortexa9_0/lib -o "lab1.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab1.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size lab1.elf  |tee "lab1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19348	   1144	  22568	  43060	   a834	lab1.elf
+'Finished building: lab1.elf.size'
+' '
+18:45:59 **** Auto Build of configuration Debug for project lab1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ctest.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ctest.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ctest.d" -MT"src/ctest.o" -o "src/ctest.o" "../src/ctest.c"
+'Finished building: ../src/ctest.c'
+' '
+'Building target: lab1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lab1_bsp/ps7_cortexa9_0/lib -o "lab1.elf"  ./src/ctest.o ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab1.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size lab1.elf  |tee "lab1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19348	   1144	  22568	  43060	   a834	lab1.elf
+'Finished building: lab1.elf.size'
+' '
+18:46:51 **** Build of project lab1_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_8/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_10/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_10/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_8/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling coresightps_dcc"
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_8/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling emacps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_10/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_10/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling sdps"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_8/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling standalone"
+In file included from usleep.c:56:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xil_sleeptimer.c:51:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xtime_l.c:49:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from sleep.c:53:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling usbps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling xadcps"
+'Finished building libraries'
+18:47:12 **** Build of configuration Debug for project lab1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ctest.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ctest.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ctest.d" -MT"src/ctest.o" -o "src/ctest.o" "../src/ctest.c"
+'Finished building: ../src/ctest.c'
+' '
+'Building target: lab1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lab1_bsp/ps7_cortexa9_0/lib -o "lab1.elf"  ./src/ctest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+../../lab1_bsp/ps7_cortexa9_0/lib\libxil.a(xil-crt0.o): In function `_start':
+C:\Users\travisallabon\Lab_1_Design_Adder\Lab_1_Design_Adder.sdk\lab1_bsp\ps7_cortexa9_0\libsrc\standalone_v6_8\src/xil-crt0.S:138: undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:41: lab1.elf] Error 1
+10:37:16 **** Auto Build of configuration Debug for project lab1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ctest.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ctest.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ctest.d" -MT"src/ctest.o" -o "src/ctest.o" "../src/ctest.c"
+../src/ctest.c: In function 'main':
+../src/ctest.c:4:4: error: unknown type name 'uint32_t'
+    uint32_t *regmap = (uint32_t *) 0x70000000;
+    ^~~~~~~~
+../src/ctest.c:4:24: error: 'uint32_t' undeclared (first use in this function)
+    uint32_t *regmap = (uint32_t *) 0x70000000;
+                        ^~~~~~~~
+../src/ctest.c:4:24: note: each undeclared identifier is reported only once for each function it appears in
+../src/ctest.c:4:34: error: expected expression before ')' token
+    uint32_t *regmap = (uint32_t *) 0x70000000;
+                                  ^
+../src/ctest.c:5:9: error: unknown type name 'size_t'
+    for (size_t i = 0; i < 16; i++) {
+         ^~~~~~
+../src/ctest.c:6:10: error: unknown type name 'size_t'
+     for (size_t j = 0; j < 16; j++) {
+          ^~~~~~
+../src/ctest.c:9:6: error: unknown type name 'size_t'
+      size_t r = regmap[0]; // read from register 0 (REG0_IN, output S of adder)
+      ^~~~~~
+../src/ctest.c:10:6: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+      printf("%2zu + %2zu = %3zu (%s)\n", i, j, r, (r == i+j) ? "COR" : "ERR");
+      ^~~~~~
+../src/ctest.c:10:6: warning: incompatible implicit declaration of built-in function 'printf'
+../src/ctest.c:10:6: note: include '<stdio.h>' or provide a declaration of 'printf'
+make: *** [src/subdir.mk:23: src/ctest.o] Error 1
+10:50:05 **** Clean-only build of configuration Debug for project lab1 ****
+make clean 
+rm -rf  ./src/ctest.o  ./src/ctest.d  lab1.elf.size  lab1.elf
+' '
+10:50:06 **** Auto Build of configuration Debug for project lab1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ctest.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ctest.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ctest.d" -MT"src/ctest.o" -o "src/ctest.o" "../src/ctest.c"
+../src/ctest.c: In function 'main':
+../src/ctest.c:4:4: error: 'regmap' undeclared (first use in this function)
+    regmap[2] = 0; //adding K
+    ^~~~~~
+../src/ctest.c:4:4: note: each undeclared identifier is reported only once for each function it appears in
+../src/ctest.c:5:4: error: unknown type name 'uint32_t'
+    uint32_t *regmap = (uint32_t *) 0x70000000;
+    ^~~~~~~~
+../src/ctest.c:5:24: error: 'uint32_t' undeclared (first use in this function)
+    uint32_t *regmap = (uint32_t *) 0x70000000;
+                        ^~~~~~~~
+../src/ctest.c:5:34: error: expected expression before ')' token
+    uint32_t *regmap = (uint32_t *) 0x70000000;
+                                  ^
+../src/ctest.c:6:9: error: unknown type name 'size_t'
+    for (size_t i = 0; i < 16; i++) {
+         ^~~~~~
+../src/ctest.c:7:10: error: unknown type name 'size_t'
+     for (size_t j = 0; j < 16; j++) {
+          ^~~~~~
+../src/ctest.c:10:6: error: unknown type name 'size_t'
+      size_t r = regmap[0]; // read from register 0 (REG0_IN, output S of adder)
+      ^~~~~~
+../src/ctest.c:11:6: error: unknown type name 'size_t'
+      size_t t = regmap[2]; //read from register 2 (REG2_IN, output Cout of adder)
+      ^~~~~~
+../src/ctest.c:12:6: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+      printf("%2zu + %2zu = %3zu (%s)\n", i, j, r, (r == i+j) ? "COR" : "ERR");
+      ^~~~~~
+../src/ctest.c:12:6: warning: incompatible implicit declaration of built-in function 'printf'
+../src/ctest.c:12:6: note: include '<stdio.h>' or provide a declaration of 'printf'
+../src/ctest.c:11:13: warning: unused variable 't' [-Wunused-variable]
+      size_t t = regmap[2]; //read from register 2 (REG2_IN, output Cout of adder)
+             ^
+make: *** [src/subdir.mk:23: src/ctest.o] Error 1
+10:51:11 **** Auto Build of configuration Debug for project lab1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ctest.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ctest.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ctest.d" -MT"src/ctest.o" -o "src/ctest.o" "../src/ctest.c"
+../src/ctest.c: In function 'main':
+../src/ctest.c:4:4: error: 'regmap' undeclared (first use in this function)
+    regmap[2] = 0; //adding K
+    ^~~~~~
+../src/ctest.c:4:4: note: each undeclared identifier is reported only once for each function it appears in
+../src/ctest.c:5:4: error: unknown type name 'uint32_t'
+    uint32_t *regmap = (uint32_t *) 0x70000000;
+    ^~~~~~~~
+../src/ctest.c:5:24: error: 'uint32_t' undeclared (first use in this function)
+    uint32_t *regmap = (uint32_t *) 0x70000000;
+                        ^~~~~~~~
+../src/ctest.c:5:34: error: expected expression before ')' token
+    uint32_t *regmap = (uint32_t *) 0x70000000;
+                                  ^
+../src/ctest.c:8:18: error: 'i' undeclared (first use in this function)
+      regmap[0] = i; // write to register 0 (REG0_OUT, input A of adder)
+                  ^
+../src/ctest.c:9:18: error: 'j' undeclared (first use in this function)
+      regmap[1] = j; // write to register 1 (REG1_OUT, input B of adder)
+                  ^
+../src/ctest.c:10:6: error: unknown type name 'size_t'
+      size_t r = regmap[0]; // read from register 0 (REG0_IN, output S of adder)
+      ^~~~~~
+../src/ctest.c:11:6: error: unknown type name 'size_t'
+      size_t t = regmap[2]; //read from register 2 (REG2_IN, output Cout of adder)
+      ^~~~~~
+../src/ctest.c:12:6: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+      printf("%2zu + %2zu = %3zu (%s)\n", i, j, r, (r == i+j) ? "COR" : "ERR");
+      ^~~~~~
+../src/ctest.c:12:6: warning: incompatible implicit declaration of built-in function 'printf'
+../src/ctest.c:12:6: note: include '<stdio.h>' or provide a declaration of 'printf'
+../src/ctest.c:11:13: warning: unused variable 't' [-Wunused-variable]
+      size_t t = regmap[2]; //read from register 2 (REG2_IN, output Cout of adder)
+             ^
+make: *** [src/subdir.mk:23: src/ctest.o] Error 1
+10:51:26 **** Auto Build of configuration Debug for project lab1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ctest.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ctest.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ctest.d" -MT"src/ctest.o" -o "src/ctest.o" "../src/ctest.c"
+../src/ctest.c: In function 'main':
+../src/ctest.c:5:4: error: unknown type name 'uint32_t'
+    uint32_t *regmap = (uint32_t *) 0x70000000;
+    ^~~~~~~~
+../src/ctest.c:5:24: error: 'uint32_t' undeclared (first use in this function)
+    uint32_t *regmap = (uint32_t *) 0x70000000;
+                        ^~~~~~~~
+../src/ctest.c:5:24: note: each undeclared identifier is reported only once for each function it appears in
+../src/ctest.c:5:34: error: expected expression before ')' token
+    uint32_t *regmap = (uint32_t *) 0x70000000;
+                                  ^
+../src/ctest.c:10:18: error: 'i' undeclared (first use in this function)
+      regmap[0] = i; // write to register 0 (REG0_OUT, input A of adder)
+                  ^
+../src/ctest.c:11:18: error: 'j' undeclared (first use in this function)
+      regmap[1] = j; // write to register 1 (REG1_OUT, input B of adder)
+                  ^
+../src/ctest.c:12:6: error: unknown type name 'size_t'
+      size_t r = regmap[0]; // read from register 0 (REG0_IN, output S of adder)
+      ^~~~~~
+../src/ctest.c:13:6: error: unknown type name 'size_t'
+      size_t t = regmap[2]; //read from register 2 (REG2_IN, output Cout of adder)
+      ^~~~~~
+../src/ctest.c:14:6: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+      printf("%2zu + %2zu = %3zu (%s)\n", i, j, r, (r == i+j) ? "COR" : "ERR");
+      ^~~~~~
+../src/ctest.c:14:6: warning: incompatible implicit declaration of built-in function 'printf'
+../src/ctest.c:14:6: note: include '<stdio.h>' or provide a declaration of 'printf'
+../src/ctest.c:13:13: warning: unused variable 't' [-Wunused-variable]
+      size_t t = regmap[2]; //read from register 2 (REG2_IN, output Cout of adder)
+             ^
+make: *** [src/subdir.mk:23: src/ctest.o] Error 1
+10:51:38 **** Auto Build of configuration Debug for project lab1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ctest.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ctest.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ctest.d" -MT"src/ctest.o" -o "src/ctest.o" "../src/ctest.c"
+../src/ctest.c: In function 'main':
+../src/ctest.c:5:4: error: unknown type name 'unit32_t'
+    unit32_t *regmap = (uint32_t *) 0x70000000;
+    ^~~~~~~~
+../src/ctest.c:5:24: error: 'uint32_t' undeclared (first use in this function)
+    unit32_t *regmap = (uint32_t *) 0x70000000;
+                        ^~~~~~~~
+../src/ctest.c:5:24: note: each undeclared identifier is reported only once for each function it appears in
+../src/ctest.c:5:34: error: expected expression before ')' token
+    unit32_t *regmap = (uint32_t *) 0x70000000;
+                                  ^
+../src/ctest.c:10:18: error: 'i' undeclared (first use in this function)
+      regmap[0] = i; // write to register 0 (REG0_OUT, input A of adder)
+                  ^
+../src/ctest.c:11:18: error: 'j' undeclared (first use in this function)
+      regmap[1] = j; // write to register 1 (REG1_OUT, input B of adder)
+                  ^
+../src/ctest.c:12:6: error: unknown type name 'size_t'
+      size_t r = regmap[0]; // read from register 0 (REG0_IN, output S of adder)
+      ^~~~~~
+../src/ctest.c:13:6: error: unknown type name 'size_t'
+      size_t t = regmap[2]; //read from register 2 (REG2_IN, output Cout of adder)
+      ^~~~~~
+../src/ctest.c:14:6: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+      printf("%2zu + %2zu = %3zu (%s)\n", i, j, r, (r == i+j) ? "COR" : "ERR");
+      ^~~~~~
+../src/ctest.c:14:6: warning: incompatible implicit declaration of built-in function 'printf'
+../src/ctest.c:14:6: note: include '<stdio.h>' or provide a declaration of 'printf'
+../src/ctest.c:13:13: warning: unused variable 't' [-Wunused-variable]
+      size_t t = regmap[2]; //read from register 2 (REG2_IN, output Cout of adder)
+             ^
+make: *** [src/subdir.mk:23: src/ctest.o] Error 1
+10:52:52 **** Auto Build of configuration Debug for project lab1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ctest.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ctest.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ctest.d" -MT"src/ctest.o" -o "src/ctest.o" "../src/ctest.c"
+../src/ctest.c: In function 'main':
+../src/ctest.c:5:4: error: unknown type name 'unit32_t'
+    unit32_t *regmap = (uint32_t *) 0x70000000;
+    ^~~~~~~~
+../src/ctest.c:5:24: error: 'uint32_t' undeclared (first use in this function)
+    unit32_t *regmap = (uint32_t *) 0x70000000;
+                        ^~~~~~~~
+../src/ctest.c:5:24: note: each undeclared identifier is reported only once for each function it appears in
+../src/ctest.c:5:34: error: expected expression before ')' token
+    unit32_t *regmap = (uint32_t *) 0x70000000;
+                                  ^
+../src/ctest.c:12:6: error: unknown type name 'size_t'
+      size_t r = regmap[0]; // read from register 0 (REG0_IN, output S of adder)
+      ^~~~~~
+../src/ctest.c:13:6: error: unknown type name 'size_t'
+      size_t t = regmap[2]; //read from register 2 (REG2_IN, output Cout of adder)
+      ^~~~~~
+../src/ctest.c:14:6: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+      printf("%2zu + %2zu = %3zu (%s)\n", i, j, r, (r == i+j) ? "COR" : "ERR");
+      ^~~~~~
+../src/ctest.c:14:6: warning: incompatible implicit declaration of built-in function 'printf'
+../src/ctest.c:14:6: note: include '<stdio.h>' or provide a declaration of 'printf'
+../src/ctest.c:14:42: error: 'i' undeclared (first use in this function)
+      printf("%2zu + %2zu = %3zu (%s)\n", i, j, r, (r == i+j) ? "COR" : "ERR");
+                                          ^
+../src/ctest.c:14:45: error: 'j' undeclared (first use in this function)
+      printf("%2zu + %2zu = %3zu (%s)\n", i, j, r, (r == i+j) ? "COR" : "ERR");
+                                             ^
+../src/ctest.c:13:13: warning: unused variable 't' [-Wunused-variable]
+      size_t t = regmap[2]; //read from register 2 (REG2_IN, output Cout of adder)
+             ^
+make: *** [src/subdir.mk:23: src/ctest.o] Error 1
+10:53:38 **** Auto Build of configuration Debug for project lab1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ctest.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ctest.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ctest.d" -MT"src/ctest.o" -o "src/ctest.o" "../src/ctest.c"
+../src/ctest.c: In function 'main':
+../src/ctest.c:5:4: error: unknown type name 'unit32_t'
+    unit32_t *regmap = (uint32_t *) 0x70000000;
+    ^~~~~~~~
+../src/ctest.c:5:24: error: 'uint32_t' undeclared (first use in this function)
+    unit32_t *regmap = (uint32_t *) 0x70000000;
+                        ^~~~~~~~
+../src/ctest.c:5:24: note: each undeclared identifier is reported only once for each function it appears in
+../src/ctest.c:5:34: error: expected expression before ')' token
+    unit32_t *regmap = (uint32_t *) 0x70000000;
+                                  ^
+../src/ctest.c:12:6: error: unknown type name 'size_t'
+      size_t r = regmap[0]; // read from register 0 (REG0_IN, output S of adder)
+      ^~~~~~
+../src/ctest.c:13:6: error: unknown type name 'size_t'
+      size_t t = regmap[2]; //read from register 2 (REG2_IN, output Cout of adder)
+      ^~~~~~
+../src/ctest.c:14:6: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+      printf("S =%d\n", r);
+      ^~~~~~
+../src/ctest.c:14:6: warning: incompatible implicit declaration of built-in function 'printf'
+../src/ctest.c:14:6: note: include '<stdio.h>' or provide a declaration of 'printf'
+../src/ctest.c:13:13: warning: unused variable 't' [-Wunused-variable]
+      size_t t = regmap[2]; //read from register 2 (REG2_IN, output Cout of adder)
+             ^
+make: *** [src/subdir.mk:23: src/ctest.o] Error 1
+10:55:22 **** Auto Build of configuration Debug for project lab1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ctest.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ctest.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ctest.d" -MT"src/ctest.o" -o "src/ctest.o" "../src/ctest.c"
+../src/ctest.c: In function 'main':
+../src/ctest.c:7:4: error: unknown type name 'unit32_t'; did you mean 'uint32_t'?
+    unit32_t *regmap = (uint32_t *) 0x70000000;
+    ^~~~~~~~
+    uint32_t
+../src/ctest.c:7:23: warning: initialization from incompatible pointer type [-Wincompatible-pointer-types]
+    unit32_t *regmap = (uint32_t *) 0x70000000;
+                       ^
+../src/ctest.c:15:13: warning: unused variable 't' [-Wunused-variable]
+      size_t t = regmap[2]; //read from register 2 (REG2_IN, output Cout of adder)
+             ^
+make: *** [src/subdir.mk:23: src/ctest.o] Error 1
+10:55:31 **** Auto Build of configuration Debug for project lab1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ctest.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ctest.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ctest.d" -MT"src/ctest.o" -o "src/ctest.o" "../src/ctest.c"
+../src/ctest.c: In function 'main':
+../src/ctest.c:15:13: warning: unused variable 't' [-Wunused-variable]
+      size_t t = regmap[2]; //read from register 2 (REG2_IN, output Cout of adder)
+             ^
+'Finished building: ../src/ctest.c'
+' '
+'Building target: lab1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lab1_bsp/ps7_cortexa9_0/lib -o "lab1.elf"  ./src/ctest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/bin/ld.exe: cannot find -lxil
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:41: lab1.elf] Error 1
+11:09:17 **** Auto Build of configuration Debug for project lab1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ctest.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ctest.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ctest.d" -MT"src/ctest.o" -o "src/ctest.o" "../src/ctest.c"
+../src/ctest.c: In function 'main':
+../src/ctest.c:21:3: error: 'regmap' undeclared (first use in this function); did you mean 'renameat'?
+   regmap[2]=0; //Adding
+   ^~~~~~
+   renameat
+../src/ctest.c:21:3: note: each undeclared identifier is reported only once for each function it appears in
+../src/ctest.c:25:3: error: expected ',' or ';' before 'size_t'
+   size_t t = regmap[2]; // Cout
+   ^~~~~~
+../src/ctest.c:27:23: error: 't' undeclared (first use in this function)
+   printf("Cout =%\n", t)//print carry
+                       ^
+../src/ctest.c:31:2: error: expected ';' before 'return'
+  return 0;
+  ^~~~~~
+make: *** [src/subdir.mk:23: src/ctest.o] Error 1
+11:10:32 **** Auto Build of configuration Debug for project lab1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ctest.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ctest.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ctest.d" -MT"src/ctest.o" -o "src/ctest.o" "../src/ctest.c"
+../src/ctest.c: In function 'main':
+../src/ctest.c:25:3: error: expected ',' or ';' before 'size_t'
+   size_t t = regmap[2]; // Cout
+   ^~~~~~
+../src/ctest.c:27:23: error: 't' undeclared (first use in this function)
+   printf("Cout =%\n", t)//print carry
+                       ^
+../src/ctest.c:27:23: note: each undeclared identifier is reported only once for each function it appears in
+../src/ctest.c:31:2: error: expected ';' before 'return'
+  return 0;
+  ^~~~~~
+make: *** [src/subdir.mk:23: src/ctest.o] Error 1
+11:10:48 **** Auto Build of configuration Debug for project lab1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ctest.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ctest.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ctest.d" -MT"src/ctest.o" -o "src/ctest.o" "../src/ctest.c"
+../src/ctest.c: In function 'main':
+../src/ctest.c:25:3: error: expected ',' or ';' before 'size_t'
+   size_t t = regmap[2]; // Cout
+   ^~~~~~
+../src/ctest.c:27:23: error: 't' undeclared (first use in this function)
+   printf("Cout =%\n", t);//print carry
+                       ^
+../src/ctest.c:27:23: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/subdir.mk:23: src/ctest.o] Error 1
+11:11:06 **** Auto Build of configuration Debug for project lab1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ctest.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ctest.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ctest.d" -MT"src/ctest.o" -o "src/ctest.o" "../src/ctest.c"
+../src/ctest.c: In function 'main':
+../src/ctest.c:27:18: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+   printf("Cout =%\n", t);//print carry
+                  ^~
+../src/ctest.c:27:10: warning: too many arguments for format [-Wformat-extra-args]
+   printf("Cout =%\n", t);//print carry
+          ^~~~~~~~~~~
+'Finished building: ../src/ctest.c'
+' '
+'Building target: lab1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lab1_bsp/ps7_cortexa9_0/lib -o "lab1.elf"  ./src/ctest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2018.3/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/bin/ld.exe: cannot find -lxil
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:41: lab1.elf] Error 1
+11:12:30 **** Build of project ctes_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_8/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_10/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_10/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_8/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling coresightps_dcc"
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_8/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling emacps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_10/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_10/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling sdps"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_8/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling standalone"
+In file included from usleep.c:56:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xil_sleeptimer.c:51:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xtime_l.c:49:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from sleep.c:53:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling usbps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling xadcps"
+'Finished building libraries'
+
+**** Build of configuration Debug for project ctes ****
+
+Nothing to build for project ctes
+11:13:04 **** Build of project lab1_bsp ****
+make -k all 
+make: *** No rule to make target 'all'.
+11:13:22 **** Auto Build of configuration Debug for project ctes ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ctest.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ctest.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ctes_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ctest.d" -MT"src/ctest.o" -o "src/ctest.o" "../src/ctest.c"
+'Finished building: ../src/ctest.c'
+' '
+'Building target: ctes.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ctes_bsp/ps7_cortexa9_0/lib -o "ctes.elf"  ./src/ctest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+../../ctes_bsp/ps7_cortexa9_0/lib\libxil.a(xil-crt0.o): In function `_start':
+C:\Users\travisallabon\Lab_1_Design_Adder\Lab_1_Design_Adder.sdk\ctes_bsp\ps7_cortexa9_0\libsrc\standalone_v6_8\src/xil-crt0.S:138: undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:41: ctes.elf] Error 1
+11:13:27 **** Auto Build of configuration Debug for project ctes ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ctest.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ctest.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ctes_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ctest.d" -MT"src/ctest.o" -o "src/ctest.o" "../src/ctest.c"
+../src/ctest.c: In function 'main':
+../src/ctest.c:27:18: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+   printf("Cout =%\n", t);//print carry
+                  ^~
+../src/ctest.c:27:10: warning: too many arguments for format [-Wformat-extra-args]
+   printf("Cout =%\n", t);//print carry
+          ^~~~~~~~~~~
+'Finished building: ../src/ctest.c'
+' '
+'Building target: ctes.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ctes_bsp/ps7_cortexa9_0/lib -o "ctes.elf"  ./src/ctest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ctes.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ctes.elf  |tee "ctes.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70360	   2580	  23328	  96268	  1780c	ctes.elf
+'Finished building: ctes.elf.size'
+' '
+11:17:19 **** Auto Build of configuration Debug for project ctes ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ctest.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ctest.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ctes_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ctest.d" -MT"src/ctest.o" -o "src/ctest.o" "../src/ctest.c"
+../src/ctest.c: In function 'main':
+../src/ctest.c:27:18: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+   printf("Cout =%\n", t);//print carry
+                  ^~
+../src/ctest.c:27:10: warning: too many arguments for format [-Wformat-extra-args]
+   printf("Cout =%\n", t);//print carry
+          ^~~~~~~~~~~
+'Finished building: ../src/ctest.c'
+' '
+'Building target: ctes.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ctes_bsp/ps7_cortexa9_0/lib -o "ctes.elf"  ./src/ctest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ctes.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ctes.elf  |tee "ctes.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70360	   2580	  23328	  96268	  1780c	ctes.elf
+'Finished building: ctes.elf.size'
+' '
+11:33:58 **** Clean-only build of configuration Debug for project ctes ****
+make clean 
+rm -rf  ./src/ctest.o  ./src/ctest.d  ctes.elf.size  ctes.elf
+' '
+11:33:58 **** Auto Build of configuration Debug for project ctes ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ctest.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ctest.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ctes_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ctest.d" -MT"src/ctest.o" -o "src/ctest.o" "../src/ctest.c"
+../src/ctest.c: In function 'main':
+../src/ctest.c:16:18: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+   printf("Cout =%\n", t);//print carry
+                  ^~
+../src/ctest.c:16:10: warning: too many arguments for format [-Wformat-extra-args]
+   printf("Cout =%\n", t);//print carry
+          ^~~~~~~~~~~
+../src/ctest.c:22:10: error: redefinition of 'r'
+   size_t r = regmap[0]; // S
+          ^
+../src/ctest.c:13:10: note: previous definition of 'r' was here
+   size_t r = regmap[0]; // S
+          ^
+../src/ctest.c:23:10: error: redefinition of 't'
+   size_t t = regmap[2]; // Cout
+          ^
+../src/ctest.c:14:10: note: previous definition of 't' was here
+   size_t t = regmap[2]; // Cout
+          ^
+../src/ctest.c:25:18: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+   printf("Cout =%\n", t);//print carry
+                  ^~
+../src/ctest.c:25:10: warning: too many arguments for format [-Wformat-extra-args]
+   printf("Cout =%\n", t);//print carry
+          ^~~~~~~~~~~
+../src/ctest.c:31:10: error: redefinition of 'r'
+   size_t r = regmap[0]; // S
+          ^
+../src/ctest.c:22:10: note: previous definition of 'r' was here
+   size_t r = regmap[0]; // S
+          ^
+../src/ctest.c:32:10: error: redefinition of 't'
+   size_t t = regmap[2]; // Cout
+          ^
+../src/ctest.c:23:10: note: previous definition of 't' was here
+   size_t t = regmap[2]; // Cout
+          ^
+../src/ctest.c:34:18: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+   printf("Cout =%\n", t);//print carry
+                  ^~
+../src/ctest.c:34:10: warning: too many arguments for format [-Wformat-extra-args]
+   printf("Cout =%\n", t);//print carry
+          ^~~~~~~~~~~
+../src/ctest.c:40:10: error: redefinition of 'r'
+   size_t r = regmap[0]; // S
+          ^
+../src/ctest.c:31:10: note: previous definition of 'r' was here
+   size_t r = regmap[0]; // S
+          ^
+../src/ctest.c:41:10: error: redefinition of 't'
+   size_t t = regmap[2]; // Cout
+          ^
+../src/ctest.c:32:10: note: previous definition of 't' was here
+   size_t t = regmap[2]; // Cout
+          ^
+../src/ctest.c:43:18: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+   printf("Cout =%\n", t);//print carry
+                  ^~
+../src/ctest.c:43:10: warning: too many arguments for format [-Wformat-extra-args]
+   printf("Cout =%\n", t);//print carry
+          ^~~~~~~~~~~
+../src/ctest.c:50:10: error: redefinition of 'r'
+   size_t r = regmap[0]; // S
+          ^
+../src/ctest.c:40:10: note: previous definition of 'r' was here
+   size_t r = regmap[0]; // S
+          ^
+../src/ctest.c:51:10: error: redefinition of 't'
+   size_t t = regmap[2]; // Cout
+          ^
+../src/ctest.c:41:10: note: previous definition of 't' was here
+   size_t t = regmap[2]; // Cout
+          ^
+../src/ctest.c:53:18: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+   printf("Cout =%\n", t);//print carry
+                  ^~
+../src/ctest.c:53:10: warning: too many arguments for format [-Wformat-extra-args]
+   printf("Cout =%\n", t);//print carry
+          ^~~~~~~~~~~
+../src/ctest.c:59:10: error: redefinition of 'r'
+   size_t r = regmap[0]; // S
+          ^
+../src/ctest.c:50:10: note: previous definition of 'r' was here
+   size_t r = regmap[0]; // S
+          ^
+../src/ctest.c:60:10: error: redefinition of 't'
+   size_t t = regmap[2]; // Cout
+          ^
+../src/ctest.c:51:10: note: previous definition of 't' was here
+   size_t t = regmap[2]; // Cout
+          ^
+../src/ctest.c:62:18: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+   printf("Cout =%\n", t);//print carry
+                  ^~
+../src/ctest.c:62:10: warning: too many arguments for format [-Wformat-extra-args]
+   printf("Cout =%\n", t);//print carry
+          ^~~~~~~~~~~
+../src/ctest.c:69:10: error: redefinition of 'r'
+   size_t r = regmap[0]; // S
+          ^
+../src/ctest.c:59:10: note: previous definition of 'r' was here
+   size_t r = regmap[0]; // S
+          ^
+../src/ctest.c:70:10: error: redefinition of 't'
+   size_t t = regmap[2]; // Cout
+          ^
+../src/ctest.c:60:10: note: previous definition of 't' was here
+   size_t t = regmap[2]; // Cout
+          ^
+../src/ctest.c:72:18: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+   printf("Cout =%\n", t);//print carry
+                  ^~
+../src/ctest.c:72:10: warning: too many arguments for format [-Wformat-extra-args]
+   printf("Cout =%\n", t);//print carry
+          ^~~~~~~~~~~
+make: *** [src/subdir.mk:23: src/ctest.o] Error 1
+11:34:35 **** Auto Build of configuration Debug for project ctes ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ctest.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ctest.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ctes_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ctest.d" -MT"src/ctest.o" -o "src/ctest.o" "../src/ctest.c"
+../src/ctest.c: In function 'main':
+../src/ctest.c:16:18: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+   printf("Cout =%\n", t);//print carry
+                  ^~
+../src/ctest.c:16:10: warning: too many arguments for format [-Wformat-extra-args]
+   printf("Cout =%\n", t);//print carry
+          ^~~~~~~~~~~
+../src/ctest.c:25:18: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+   printf("Cout =%\n", t);//print carry
+                  ^~
+../src/ctest.c:25:10: warning: too many arguments for format [-Wformat-extra-args]
+   printf("Cout =%\n", t);//print carry
+          ^~~~~~~~~~~
+../src/ctest.c:31:10: error: redefinition of 'r'
+   size_t r = regmap[0]; // S
+          ^
+../src/ctest.c:13:10: note: previous definition of 'r' was here
+   size_t r = regmap[0]; // S
+          ^
+../src/ctest.c:32:10: error: redefinition of 't'
+   size_t t = regmap[2]; // Cout
+          ^
+../src/ctest.c:14:10: note: previous definition of 't' was here
+   size_t t = regmap[2]; // Cout
+          ^
+../src/ctest.c:34:18: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+   printf("Cout =%\n", t);//print carry
+                  ^~
+../src/ctest.c:34:10: warning: too many arguments for format [-Wformat-extra-args]
+   printf("Cout =%\n", t);//print carry
+          ^~~~~~~~~~~
+../src/ctest.c:40:10: error: redefinition of 'r'
+   size_t r = regmap[0]; // S
+          ^
+../src/ctest.c:31:10: note: previous definition of 'r' was here
+   size_t r = regmap[0]; // S
+          ^
+../src/ctest.c:41:10: error: redefinition of 't'
+   size_t t = regmap[2]; // Cout
+          ^
+../src/ctest.c:32:10: note: previous definition of 't' was here
+   size_t t = regmap[2]; // Cout
+          ^
+../src/ctest.c:43:18: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+   printf("Cout =%\n", t);//print carry
+                  ^~
+../src/ctest.c:43:10: warning: too many arguments for format [-Wformat-extra-args]
+   printf("Cout =%\n", t);//print carry
+          ^~~~~~~~~~~
+../src/ctest.c:50:10: error: redefinition of 'r'
+   size_t r = regmap[0]; // S
+          ^
+../src/ctest.c:40:10: note: previous definition of 'r' was here
+   size_t r = regmap[0]; // S
+          ^
+../src/ctest.c:51:10: error: redefinition of 't'
+   size_t t = regmap[2]; // Cout
+          ^
+../src/ctest.c:41:10: note: previous definition of 't' was here
+   size_t t = regmap[2]; // Cout
+          ^
+../src/ctest.c:53:18: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+   printf("Cout =%\n", t);//print carry
+                  ^~
+../src/ctest.c:53:10: warning: too many arguments for format [-Wformat-extra-args]
+   printf("Cout =%\n", t);//print carry
+          ^~~~~~~~~~~
+../src/ctest.c:59:10: error: redefinition of 'r'
+   size_t r = regmap[0]; // S
+          ^
+../src/ctest.c:50:10: note: previous definition of 'r' was here
+   size_t r = regmap[0]; // S
+          ^
+../src/ctest.c:60:10: error: redefinition of 't'
+   size_t t = regmap[2]; // Cout
+          ^
+../src/ctest.c:51:10: note: previous definition of 't' was here
+   size_t t = regmap[2]; // Cout
+          ^
+../src/ctest.c:62:18: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+   printf("Cout =%\n", t);//print carry
+                  ^~
+../src/ctest.c:62:10: warning: too many arguments for format [-Wformat-extra-args]
+   printf("Cout =%\n", t);//print carry
+          ^~~~~~~~~~~
+../src/ctest.c:69:10: error: redefinition of 'r'
+   size_t r = regmap[0]; // S
+          ^
+../src/ctest.c:59:10: note: previous definition of 'r' was here
+   size_t r = regmap[0]; // S
+          ^
+../src/ctest.c:70:10: error: redefinition of 't'
+   size_t t = regmap[2]; // Cout
+          ^
+../src/ctest.c:60:10: note: previous definition of 't' was here
+   size_t t = regmap[2]; // Cout
+          ^
+../src/ctest.c:72:18: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+   printf("Cout =%\n", t);//print carry
+                  ^~
+../src/ctest.c:72:10: warning: too many arguments for format [-Wformat-extra-args]
+   printf("Cout =%\n", t);//print carry
+          ^~~~~~~~~~~
+make: *** [src/subdir.mk:23: src/ctest.o] Error 1
+11:35:13 **** Auto Build of configuration Debug for project ctes ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ctest.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ctest.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ctes_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ctest.d" -MT"src/ctest.o" -o "src/ctest.o" "../src/ctest.c"
+../src/ctest.c: In function 'main':
+../src/ctest.c:16:18: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+   printf("Cout =%\n", t);//print carry
+                  ^~
+../src/ctest.c:16:10: warning: too many arguments for format [-Wformat-extra-args]
+   printf("Cout =%\n", t);//print carry
+          ^~~~~~~~~~~
+../src/ctest.c:25:18: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+   printf("Cout =%\n", t);//print carry
+                  ^~
+../src/ctest.c:25:10: warning: too many arguments for format [-Wformat-extra-args]
+   printf("Cout =%\n", t);//print carry
+          ^~~~~~~~~~~
+../src/ctest.c:34:18: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+   printf("Cout =%\n", t);//print carry
+                  ^~
+../src/ctest.c:34:10: warning: too many arguments for format [-Wformat-extra-args]
+   printf("Cout =%\n", t);//print carry
+          ^~~~~~~~~~~
+../src/ctest.c:43:18: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+   printf("Cout =%\n", t);//print carry
+                  ^~
+../src/ctest.c:43:10: warning: too many arguments for format [-Wformat-extra-args]
+   printf("Cout =%\n", t);//print carry
+          ^~~~~~~~~~~
+../src/ctest.c:53:18: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+   printf("Cout =%\n", t);//print carry
+                  ^~
+../src/ctest.c:53:10: warning: too many arguments for format [-Wformat-extra-args]
+   printf("Cout =%\n", t);//print carry
+          ^~~~~~~~~~~
+../src/ctest.c:62:18: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+   printf("Cout =%\n", t);//print carry
+                  ^~
+../src/ctest.c:62:10: warning: too many arguments for format [-Wformat-extra-args]
+   printf("Cout =%\n", t);//print carry
+          ^~~~~~~~~~~
+../src/ctest.c:72:18: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+   printf("Cout =%\n", t);//print carry
+                  ^~
+../src/ctest.c:72:10: warning: too many arguments for format [-Wformat-extra-args]
+   printf("Cout =%\n", t);//print carry
+          ^~~~~~~~~~~
+'Finished building: ../src/ctest.c'
+' '
+'Building target: ctes.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ctes_bsp/ps7_cortexa9_0/lib -o "ctes.elf"  ./src/ctest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ctes.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ctes.elf  |tee "ctes.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71000	   2580	  23328	  96908	  17a8c	ctes.elf
+'Finished building: ctes.elf.size'
+' '
+11:43:32 **** Build of project ctestboard_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_8/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_10/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_10/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_8/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling coresightps_dcc"
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_8/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling emacps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_10/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_10/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling sdps"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_8/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling standalone"
+In file included from usleep.c:56:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xil_sleeptimer.c:51:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xtime_l.c:49:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from sleep.c:53:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling usbps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling xadcps"
+'Finished building libraries'
+
+**** Build of configuration Debug for project ctestboard ****
+
+Nothing to build for project ctestboard
+11:44:03 **** Auto Build of configuration Debug for project ctestboard ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ctestboard8.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ctestboard8.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ctestboard_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ctestboard8.d" -MT"src/ctestboard8.o" -o "src/ctestboard8.o" "../src/ctestboard8.c"
+'Finished building: ../src/ctestboard8.c'
+' '
+'Building target: ctestboard.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ctestboard_bsp/ps7_cortexa9_0/lib -o "ctestboard.elf"  ./src/ctestboard8.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+../../ctestboard_bsp/ps7_cortexa9_0/lib\libxil.a(xil-crt0.o): In function `_start':
+C:\Users\travisallabon\Lab_1_Design_Adder\Lab_1_Design_Adder.sdk\ctestboard_bsp\ps7_cortexa9_0\libsrc\standalone_v6_8\src/xil-crt0.S:138: undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:41: ctestboard.elf] Error 1
+11:44:34 **** Auto Build of configuration Debug for project ctestboard ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ctestboard8.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ctestboard8.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ctestboard_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ctestboard8.d" -MT"src/ctestboard8.o" -o "src/ctestboard8.o" "../src/ctestboard8.c"
+../src/ctestboard8.c: In function 'main':
+../src/ctestboard8.c:16:18: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+   printf("Cout =%\n", t);//print carry
+                  ^~
+../src/ctestboard8.c:16:10: warning: too many arguments for format [-Wformat-extra-args]
+   printf("Cout =%\n", t);//print carry
+          ^~~~~~~~~~~
+../src/ctestboard8.c:25:18: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+   printf("Cout =%\n", t);//print carry
+                  ^~
+../src/ctestboard8.c:25:10: warning: too many arguments for format [-Wformat-extra-args]
+   printf("Cout =%\n", t);//print carry
+          ^~~~~~~~~~~
+../src/ctestboard8.c:34:18: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+   printf("Cout =%\n", t);//print carry
+                  ^~
+../src/ctestboard8.c:34:10: warning: too many arguments for format [-Wformat-extra-args]
+   printf("Cout =%\n", t);//print carry
+          ^~~~~~~~~~~
+../src/ctestboard8.c:43:18: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+   printf("Cout =%\n", t);//print carry
+                  ^~
+../src/ctestboard8.c:43:10: warning: too many arguments for format [-Wformat-extra-args]
+   printf("Cout =%\n", t);//print carry
+          ^~~~~~~~~~~
+../src/ctestboard8.c:53:18: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+   printf("Cout =%\n", t);//print carry
+                  ^~
+../src/ctestboard8.c:53:10: warning: too many arguments for format [-Wformat-extra-args]
+   printf("Cout =%\n", t);//print carry
+          ^~~~~~~~~~~
+../src/ctestboard8.c:62:18: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+   printf("Cout =%\n", t);//print carry
+                  ^~
+../src/ctestboard8.c:62:10: warning: too many arguments for format [-Wformat-extra-args]
+   printf("Cout =%\n", t);//print carry
+          ^~~~~~~~~~~
+../src/ctestboard8.c:72:18: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+   printf("Cout =%\n", t);//print carry
+                  ^~
+../src/ctestboard8.c:72:10: warning: too many arguments for format [-Wformat-extra-args]
+   printf("Cout =%\n", t);//print carry
+          ^~~~~~~~~~~
+'Finished building: ../src/ctestboard8.c'
+' '
+'Building target: ctestboard.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ctestboard_bsp/ps7_cortexa9_0/lib -o "ctestboard.elf"  ./src/ctestboard8.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ctestboard.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ctestboard.elf  |tee "ctestboard.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71000	   2580	  23328	  96908	  17a8c	ctestboard.elf
+'Finished building: ctestboard.elf.size'
+' '
+11:53:03 **** Incremental Build of configuration Debug for project ctestboard ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+11:55:42 **** Incremental Build of configuration Debug for project ctestboard ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ctestboard8.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ctestboard8.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ctestboard_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ctestboard8.d" -MT"src/ctestboard8.o" -o "src/ctestboard8.o" "../src/ctestboard8.c"
+../src/ctestboard8.c: In function 'main':
+../src/ctestboard8.c:16:18: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+   printf("Cout =%\n", t);//print carry
+                  ^~
+../src/ctestboard8.c:16:10: warning: too many arguments for format [-Wformat-extra-args]
+   printf("Cout =%\n", t);//print carry
+          ^~~~~~~~~~~
+../src/ctestboard8.c:25:18: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+   printf("Cout =%\n", t);//print carry
+                  ^~
+../src/ctestboard8.c:25:10: warning: too many arguments for format [-Wformat-extra-args]
+   printf("Cout =%\n", t);//print carry
+          ^~~~~~~~~~~
+../src/ctestboard8.c:34:18: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+   printf("Cout =%\n", t);//print carry
+                  ^~
+../src/ctestboard8.c:34:10: warning: too many arguments for format [-Wformat-extra-args]
+   printf("Cout =%\n", t);//print carry
+          ^~~~~~~~~~~
+../src/ctestboard8.c:43:18: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+   printf("Cout =%\n", t);//print carry
+                  ^~
+../src/ctestboard8.c:43:10: warning: too many arguments for format [-Wformat-extra-args]
+   printf("Cout =%\n", t);//print carry
+          ^~~~~~~~~~~
+../src/ctestboard8.c:53:18: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+   printf("Cout =%\n", t);//print carry
+                  ^~
+../src/ctestboard8.c:53:10: warning: too many arguments for format [-Wformat-extra-args]
+   printf("Cout =%\n", t);//print carry
+          ^~~~~~~~~~~
+../src/ctestboard8.c:62:18: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+   printf("Cout =%\n", t);//print carry
+                  ^~
+../src/ctestboard8.c:62:10: warning: too many arguments for format [-Wformat-extra-args]
+   printf("Cout =%\n", t);//print carry
+          ^~~~~~~~~~~
+../src/ctestboard8.c:72:18: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+   printf("Cout =%\n", t);//print carry
+                  ^~
+../src/ctestboard8.c:72:10: warning: too many arguments for format [-Wformat-extra-args]
+   printf("Cout =%\n", t);//print carry
+          ^~~~~~~~~~~
+'Finished building: ../src/ctestboard8.c'
+' '
+'Building target: ctestboard.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ctestboard_bsp/ps7_cortexa9_0/lib -o "ctestboard.elf"  ./src/ctestboard8.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ctestboard.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ctestboard.elf  |tee "ctestboard.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71000	   2580	  23328	  96908	  17a8c	ctestboard.elf
+'Finished building: ctestboard.elf.size'
+' '
+11:56:32 **** Incremental Build of configuration Debug for project ctestboard ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+11:57:21 **** Auto Build of configuration Debug for project ctestboard ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ctestboard8.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ctestboard8.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ctestboard_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ctestboard8.d" -MT"src/ctestboard8.o" -o "src/ctestboard8.o" "../src/ctestboard8.c"
+../src/ctestboard8.c: In function 'main':
+../src/ctestboard8.c:16:18: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+   printf("Cout =%\n", t);//print carry
+                  ^~
+../src/ctestboard8.c:16:10: warning: too many arguments for format [-Wformat-extra-args]
+   printf("Cout =%\n", t);//print carry
+          ^~~~~~~~~~~
+../src/ctestboard8.c:25:18: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+   printf("Cout =%\n", t);//print carry
+                  ^~
+../src/ctestboard8.c:25:10: warning: too many arguments for format [-Wformat-extra-args]
+   printf("Cout =%\n", t);//print carry
+          ^~~~~~~~~~~
+../src/ctestboard8.c:34:18: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+   printf("Cout =%\n", t);//print carry
+                  ^~
+../src/ctestboard8.c:34:10: warning: too many arguments for format [-Wformat-extra-args]
+   printf("Cout =%\n", t);//print carry
+          ^~~~~~~~~~~
+../src/ctestboard8.c:43:18: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+   printf("Cout =%\n", t);//print carry
+                  ^~
+../src/ctestboard8.c:43:10: warning: too many arguments for format [-Wformat-extra-args]
+   printf("Cout =%\n", t);//print carry
+          ^~~~~~~~~~~
+../src/ctestboard8.c:53:18: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+   printf("Cout =%\n", t);//print carry
+                  ^~
+../src/ctestboard8.c:53:10: warning: too many arguments for format [-Wformat-extra-args]
+   printf("Cout =%\n", t);//print carry
+          ^~~~~~~~~~~
+../src/ctestboard8.c:62:18: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+   printf("Cout =%\n", t);//print carry
+                  ^~
+../src/ctestboard8.c:62:10: warning: too many arguments for format [-Wformat-extra-args]
+   printf("Cout =%\n", t);//print carry
+          ^~~~~~~~~~~
+../src/ctestboard8.c:72:18: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+   printf("Cout =%\n", t);//print carry
+                  ^~
+../src/ctestboard8.c:72:10: warning: too many arguments for format [-Wformat-extra-args]
+   printf("Cout =%\n", t);//print carry
+          ^~~~~~~~~~~
+'Finished building: ../src/ctestboard8.c'
+' '
+'Building target: ctestboard.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ctestboard_bsp/ps7_cortexa9_0/lib -o "ctestboard.elf"  ./src/ctestboard8.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ctestboard.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ctestboard.elf  |tee "ctestboard.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71008	   2580	  23328	  96916	  17a94	ctestboard.elf
+'Finished building: ctestboard.elf.size'
+' '
+11:57:42 **** Incremental Build of configuration Debug for project ctestboard ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+11:59:56 **** Incremental Build of configuration Debug for project ctestboard ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ctestboard8.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ctestboard8.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ctestboard_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ctestboard8.d" -MT"src/ctestboard8.o" -o "src/ctestboard8.o" "../src/ctestboard8.c"
+../src/ctestboard8.c: In function 'main':
+../src/ctestboard8.c:16:18: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+   printf("Cout =%\n", t);//print carry
+                  ^~
+../src/ctestboard8.c:16:10: warning: too many arguments for format [-Wformat-extra-args]
+   printf("Cout =%\n", t);//print carry
+          ^~~~~~~~~~~
+../src/ctestboard8.c:25:18: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+   printf("Cout =%\n", t);//print carry
+                  ^~
+../src/ctestboard8.c:25:10: warning: too many arguments for format [-Wformat-extra-args]
+   printf("Cout =%\n", t);//print carry
+          ^~~~~~~~~~~
+../src/ctestboard8.c:34:18: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+   printf("Cout =%\n", t);//print carry
+                  ^~
+../src/ctestboard8.c:34:10: warning: too many arguments for format [-Wformat-extra-args]
+   printf("Cout =%\n", t);//print carry
+          ^~~~~~~~~~~
+../src/ctestboard8.c:43:18: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+   printf("Cout =%\n", t);//print carry
+                  ^~
+../src/ctestboard8.c:43:10: warning: too many arguments for format [-Wformat-extra-args]
+   printf("Cout =%\n", t);//print carry
+          ^~~~~~~~~~~
+../src/ctestboard8.c:53:18: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+   printf("Cout =%\n", t);//print carry
+                  ^~
+../src/ctestboard8.c:53:10: warning: too many arguments for format [-Wformat-extra-args]
+   printf("Cout =%\n", t);//print carry
+          ^~~~~~~~~~~
+../src/ctestboard8.c:62:18: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+   printf("Cout =%\n", t);//print carry
+                  ^~
+../src/ctestboard8.c:62:10: warning: too many arguments for format [-Wformat-extra-args]
+   printf("Cout =%\n", t);//print carry
+          ^~~~~~~~~~~
+../src/ctestboard8.c:72:18: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+   printf("Cout =%\n", t);//print carry
+                  ^~
+../src/ctestboard8.c:72:10: warning: too many arguments for format [-Wformat-extra-args]
+   printf("Cout =%\n", t);//print carry
+          ^~~~~~~~~~~
+'Finished building: ../src/ctestboard8.c'
+' '
+'Building target: ctestboard.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ctestboard_bsp/ps7_cortexa9_0/lib -o "ctestboard.elf"  ./src/ctestboard8.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ctestboard.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ctestboard.elf  |tee "ctestboard.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71008	   2580	  23328	  96916	  17a94	ctestboard.elf
+'Finished building: ctestboard.elf.size'
+' '
+12:01:37 **** Incremental Build of configuration Debug for project ctestboard ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ctestboard8.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ctestboard8.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ctestboard_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ctestboard8.d" -MT"src/ctestboard8.o" -o "src/ctestboard8.o" "../src/ctestboard8.c"
+'Finished building: ../src/ctestboard8.c'
+' '
+'Building target: ctestboard.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ctestboard_bsp/ps7_cortexa9_0/lib -o "ctestboard.elf"  ./src/ctestboard8.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ctestboard.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ctestboard.elf  |tee "ctestboard.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71008	   2580	  23328	  96916	  17a94	ctestboard.elf
+'Finished building: ctestboard.elf.size'
+' '
+12:05:28 **** Incremental Build of configuration Debug for project ctestboard ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ctestboard8.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ctestboard8.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ctestboard_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ctestboard8.d" -MT"src/ctestboard8.o" -o "src/ctestboard8.o" "../src/ctestboard8.c"
+'Finished building: ../src/ctestboard8.c'
+' '
+'Building target: ctestboard.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ctestboard_bsp/ps7_cortexa9_0/lib -o "ctestboard.elf"  ./src/ctestboard8.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ctestboard.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ctestboard.elf  |tee "ctestboard.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71000	   2580	  23328	  96908	  17a8c	ctestboard.elf
+'Finished building: ctestboard.elf.size'
+' '
+12:12:07 **** Auto Build of configuration Debug for project ctestboard ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ctestboard8.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ctestboard8.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ctestboard_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ctestboard8.d" -MT"src/ctestboard8.o" -o "src/ctestboard8.o" "../src/ctestboard8.c"
+'Finished building: ../src/ctestboard8.c'
+' '
+'Building target: ctestboard.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ctestboard_bsp/ps7_cortexa9_0/lib -o "ctestboard.elf"  ./src/ctestboard8.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ctestboard.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ctestboard.elf  |tee "ctestboard.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71452	   2580	  23328	  97360	  17c50	ctestboard.elf
+'Finished building: ctestboard.elf.size'
+' '
+12:12:27 **** Incremental Build of configuration Debug for project ctestboard ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+12:27:40 **** Auto Build of configuration Debug for project ctes ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ctest.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ctest.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ctes_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ctest.d" -MT"src/ctest.o" -o "src/ctest.o" "../src/ctest.c"
+../src/ctest.c: In function 'main':
+../src/ctest.c:15:18: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+   printf("Cout =%\n", t);//print carry
+                  ^~
+../src/ctest.c:15:10: warning: too many arguments for format [-Wformat-extra-args]
+   printf("Cout =%\n", t);//print carry
+          ^~~~~~~~~~~
+../src/ctest.c:24:18: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+   printf("Cout =%\n", t);//print carry
+                  ^~
+../src/ctest.c:24:10: warning: too many arguments for format [-Wformat-extra-args]
+   printf("Cout =%\n", t);//print carry
+          ^~~~~~~~~~~
+../src/ctest.c:33:18: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+   printf("Cout =%\n", t);//print carry
+                  ^~
+../src/ctest.c:33:10: warning: too many arguments for format [-Wformat-extra-args]
+   printf("Cout =%\n", t);//print carry
+          ^~~~~~~~~~~
+../src/ctest.c:42:18: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+   printf("Cout =%\n", t);//print carry
+                  ^~
+../src/ctest.c:42:10: warning: too many arguments for format [-Wformat-extra-args]
+   printf("Cout =%\n", t);//print carry
+          ^~~~~~~~~~~
+../src/ctest.c:52:18: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+   printf("Cout =%\n", t);//print carry
+                  ^~
+../src/ctest.c:52:10: warning: too many arguments for format [-Wformat-extra-args]
+   printf("Cout =%\n", t);//print carry
+          ^~~~~~~~~~~
+../src/ctest.c:61:18: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+   printf("Cout =%\n", t);//print carry
+                  ^~
+../src/ctest.c:61:10: warning: too many arguments for format [-Wformat-extra-args]
+   printf("Cout =%\n", t);//print carry
+          ^~~~~~~~~~~
+../src/ctest.c:71:18: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+   printf("Cout =%\n", t);//print carry
+                  ^~
+../src/ctest.c:71:10: warning: too many arguments for format [-Wformat-extra-args]
+   printf("Cout =%\n", t);//print carry
+          ^~~~~~~~~~~
+'Finished building: ../src/ctest.c'
+' '
+'Building target: ctes.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ctes_bsp/ps7_cortexa9_0/lib -o "ctes.elf"  ./src/ctest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ctes.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ctes.elf  |tee "ctes.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71000	   2580	  23328	  96908	  17a8c	ctes.elf
+'Finished building: ctes.elf.size'
+' '
+16:33:43 **** Auto Build of configuration Debug for project ctes ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ctest.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ctest.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ctes_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ctest.d" -MT"src/ctest.o" -o "src/ctest.o" "../src/ctest.c"
+../src/ctest.c: In function 'main':
+../src/ctest.c:25:18: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+   printf("Cout =%\n", t);//print carry
+                  ^~
+../src/ctest.c:25:10: warning: too many arguments for format [-Wformat-extra-args]
+   printf("Cout =%\n", t);//print carry
+          ^~~~~~~~~~~
+../src/ctest.c:34:18: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+   printf("Cout =%\n", t);//print carry
+                  ^~
+../src/ctest.c:34:10: warning: too many arguments for format [-Wformat-extra-args]
+   printf("Cout =%\n", t);//print carry
+          ^~~~~~~~~~~
+../src/ctest.c:43:18: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+   printf("Cout =%\n", t);//print carry
+                  ^~
+../src/ctest.c:43:10: warning: too many arguments for format [-Wformat-extra-args]
+   printf("Cout =%\n", t);//print carry
+          ^~~~~~~~~~~
+../src/ctest.c:52:18: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+   printf("Cout =%\n", t);//print carry
+                  ^~
+../src/ctest.c:52:10: warning: too many arguments for format [-Wformat-extra-args]
+   printf("Cout =%\n", t);//print carry
+          ^~~~~~~~~~~
+../src/ctest.c:62:18: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+   printf("Cout =%\n", t);//print carry
+                  ^~
+../src/ctest.c:62:10: warning: too many arguments for format [-Wformat-extra-args]
+   printf("Cout =%\n", t);//print carry
+          ^~~~~~~~~~~
+../src/ctest.c:71:18: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+   printf("Cout =%\n", t);//print carry
+                  ^~
+../src/ctest.c:71:10: warning: too many arguments for format [-Wformat-extra-args]
+   printf("Cout =%\n", t);//print carry
+          ^~~~~~~~~~~
+../src/ctest.c:81:18: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+   printf("Cout =%\n", t);//print carry
+                  ^~
+../src/ctest.c:81:10: warning: too many arguments for format [-Wformat-extra-args]
+   printf("Cout =%\n", t);//print carry
+          ^~~~~~~~~~~
+'Finished building: ../src/ctest.c'
+' '
+'Building target: ctes.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ctes_bsp/ps7_cortexa9_0/lib -o "ctes.elf"  ./src/ctest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ctes.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ctes.elf  |tee "ctes.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71000	   2580	  23328	  96908	  17a8c	ctes.elf
+'Finished building: ctes.elf.size'
+' '
+16:34:15 **** Auto Build of configuration Debug for project ctestboard ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ctestboard8.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ctestboard8.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ctestboard_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ctestboard8.d" -MT"src/ctestboard8.o" -o "src/ctestboard8.o" "../src/ctestboard8.c"
+'Finished building: ../src/ctestboard8.c'
+' '
+'Building target: ctestboard.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ctestboard_bsp/ps7_cortexa9_0/lib -o "ctestboard.elf"  ./src/ctestboard8.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ctestboard.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ctestboard.elf  |tee "ctestboard.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71452	   2580	  23328	  97360	  17c50	ctestboard.elf
+'Finished building: ctestboard.elf.size'
+' '

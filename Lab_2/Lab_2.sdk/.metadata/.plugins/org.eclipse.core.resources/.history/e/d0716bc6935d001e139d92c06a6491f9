@@ -1,0 +1,162 @@
+#include <stdio.h>
+int main(void)
+{
+	uint32_t *regmap = (uint32_t *) 0x70000000;
+	//regmap[0]=1//A
+	//regmap[1]=1//B
+	//regmap[2]=1//SHAMT
+	//regmap[3]=1//ALUOp
+	//reg4in is zero
+	//reg5in is overflow
+	//reg0in is R
+
+
+	//Signed Add
+	regmap[0]=-10;
+	regmap[1]=-8;
+	regmap[3]=4;
+	uint32_t expected_result = -18;
+	uint32_t result = regmap[0];
+	if (result == expected_result) {
+	  printf("Signed Add Success\n");
+	} else {
+	  printf("Signed Add Failed\n");
+	}
+
+	//Unsigned Add
+	regmap[0]=8;
+	regmap[1]=2;
+	regmap[3]=5;
+	expected_result=10;
+	result = regmap[0];
+	if (result == expected_result) {
+	  printf("Unsigned Add Success\n");
+	} else {
+	  printf("Unsigned Add Failed\n");
+	}
+
+	//Signed Sub
+	regmap[0]=2;
+	regmap[1]=-8;
+	regmap[3]=6;
+	expected_result = 10;
+	result = regmap[0];
+	if (result == expected_result) {
+	  printf("Signed Sub Success\n");
+	} else {
+	  printf("Signed Sub Failed\n");
+	}
+
+	//Unsigned Sub
+	regmap[0]=8;
+	regmap[1]=8;
+	regmap[3]=7;
+	expected_result=0;
+	result = regmap[0];
+	if (result == expected_result) {
+	  printf("Unsigned Sub Success\n");
+	} else {
+	  printf("Unsigned Sub Failed\n");
+	}
+
+	//Bitwise AND
+	regmap[3]=0;
+	regmap[0]=1;
+	regmap[1]=2;
+	expected_result = 0;
+	result = regmap[0];
+	if (result == expected_result) {
+	  printf("Bitwise AND Success\n");
+	} else {
+	  printf("Bitwise AND Failed\n");
+	}
+	//Bitwise OR
+	regmap[3]=1;
+	regmap[0]=170;
+	regmap[1]=85;
+	expected_result=255;
+	result = regmap[0];
+	if (result == expected_result) {
+	  printf("Bitwise OR Success\n");
+	} else {
+	  printf("Bitwise OR Failed\n");
+	}
+	//Bitwise NOR
+	regmap[3]=3;
+	regmap[0]=0x00000000;
+	regmap[1]=0x00000000;
+	expected_result=0xFFFFFFFF;
+	result=regmap[0];
+	if (result == expected_result) {
+	  printf("Bitwise NOR Success\n");
+	} else {
+	  printf("Bitwise NOR Failed\n");
+	}
+	//Bitwise XOR
+	regmap[3]=2;
+	regmap[0]=0xFFFFFFFF;
+	regmap[0]=0xFFFFFFFF;
+	expected_result=0x00000000;
+	result=regmap[0];
+	if (result == expected_result) {
+	  printf("Bitwise XOR Success\n");
+	} else {
+	  printf("Bitwise XOR Failed\n");
+	}
+	//Set on Less Than Signed
+	regmap[3]=10;
+	regmap[0]=0xFFFFFFF6;
+	regmap[1]=0xFFFFFFF8;
+	expected_result=0x00000000;
+	result=regmap[0];
+	if (result == expected_result) {
+	  printf("Set Less Than Signed Success\n");
+	} else {
+	  printf("Set Less Than Signed Failed\n");
+	}
+	//Set on Less Than Unsigned
+	regmap[3]=11;
+	regmap[0]=0x00000008;
+	regmap[1]=0x00000007;
+	expected_result=0x00000000;
+	result=regmap[0];
+	if (result == expected_result) {
+	  printf("Set Less Than Unsigned Success\n");
+	} else {
+	  printf("Set Less Than Unsigned Failed\n");
+	}
+	//Shift Left Logical
+	regmap[3]=12;
+	regmap[0]=0xFEDCBA98;
+	regmap[2]=19;
+	expected_result=0xD4C00000;
+	result=regmap[0];
+	if (result == expected_result) {
+	  printf("Shift Left Logical Success\n");
+	} else {
+	  printf("Shift Left Logical Failed\n");
+	}
+	//Shift Right Logical
+	regmap[0]=14;
+	regmap[0]=0xFEDCBA98;
+	regmap[2]=14;
+	expected_result=0x0003FB72;
+	result=regmap[0];
+	if (result == expected_result) {
+	  printf("Shift Right Logical Success\n");
+	} else {
+	  printf("Shift Right Logic Failed\n");
+	}
+	//Shift Right Arithmetic
+	regmap[0]=15;
+	regmap[0]=0xFEDCBA98;
+	regmap[2]=1;
+	expected_result=0xFF6E5D4C;
+	result=regmap[0];
+	if (result == expected_result) {
+	  printf("Shift Right Arithmetic Success\n");
+	} else {
+	  printf("Shift Right Arithmetic Failed\n");
+	}
+	return 0;
+}

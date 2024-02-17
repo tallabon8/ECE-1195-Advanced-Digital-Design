@@ -1,0 +1,588 @@
+19:05:30 **** Build of project Lab2CTest_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_8/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_10/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_10/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_8/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling coresightps_dcc"
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_8/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling emacps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_10/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_10/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling sdps"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_8/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling standalone"
+In file included from usleep.c:56:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xil_sleeptimer.c:51:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xtime_l.c:49:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from sleep.c:53:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling usbps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling xadcps"
+'Finished building libraries'
+
+**** Build of configuration Debug for project Lab2CTest ****
+
+Nothing to build for project Lab2CTest
+19:08:55 **** Auto Build of configuration Debug for project Lab2CTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lab2test.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab2test.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab2CTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2test.d" -MT"src/lab2test.o" -o "src/lab2test.o" "../src/lab2test.c"
+'Finished building: ../src/lab2test.c'
+' '
+'Building target: Lab2CTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab2CTest_bsp/ps7_cortexa9_0/lib -o "Lab2CTest.elf"  ./src/lab2test.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+../../Lab2CTest_bsp/ps7_cortexa9_0/lib\libxil.a(xil-crt0.o): In function `_start':
+C:\Users\travisallabon\Lab_2\Lab_2.sdk\Lab2CTest_bsp\ps7_cortexa9_0\libsrc\standalone_v6_8\src/xil-crt0.S:138: undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:41: Lab2CTest.elf] Error 1
+19:22:52 **** Auto Build of configuration Debug for project Lab2CTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lab2test.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab2test.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab2CTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2test.d" -MT"src/lab2test.o" -o "src/lab2test.o" "../src/lab2test.c"
+../src/lab2test.c:1:10: fatal error: studio.h: No such file or directory
+ #include <studio.h>
+          ^~~~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:23: src/lab2test.o] Error 1
+19:23:23 **** Auto Build of configuration Debug for project Lab2CTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lab2test.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab2test.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab2CTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2test.d" -MT"src/lab2test.o" -o "src/lab2test.o" "../src/lab2test.c"
+../src/lab2test.c: In function 'main':
+../src/lab2test.c:15:20: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'result'
+  uint32_t expected result = -18;
+                    ^~~~~~
+../src/lab2test.c:15:20: error: 'result' undeclared (first use in this function)
+../src/lab2test.c:15:20: note: each undeclared identifier is reported only once for each function it appears in
+../src/lab2test.c:16:20: error: 'expected_result' undeclared (first use in this function)
+  uint32_t result = expected_result;
+                    ^~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:23: src/lab2test.o] Error 1
+19:23:39 **** Auto Build of configuration Debug for project Lab2CTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lab2test.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab2test.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab2CTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2test.d" -MT"src/lab2test.o" -o "src/lab2test.o" "../src/lab2test.c"
+'Finished building: ../src/lab2test.c'
+' '
+'Building target: Lab2CTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab2CTest_bsp/ps7_cortexa9_0/lib -o "Lab2CTest.elf"  ./src/lab2test.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Lab2CTest.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Lab2CTest.elf  |tee "Lab2CTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  31876	   2184	  22632	  56692	   dd74	Lab2CTest.elf
+'Finished building: Lab2CTest.elf.size'
+' '
+19:26:35 **** Incremental Build of configuration Debug for project Lab2CTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+19:27:03 **** Incremental Build of configuration Debug for project Lab2CTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+19:27:57 **** Incremental Build of configuration Debug for project Lab2CTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+19:30:47 **** Incremental Build of configuration Debug for project Lab2CTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lab2test.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab2test.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab2CTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2test.d" -MT"src/lab2test.o" -o "src/lab2test.o" "../src/lab2test.c"
+'Finished building: ../src/lab2test.c'
+' '
+'Building target: Lab2CTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab2CTest_bsp/ps7_cortexa9_0/lib -o "Lab2CTest.elf"  ./src/lab2test.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Lab2CTest.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Lab2CTest.elf  |tee "Lab2CTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  32048	   2184	  22632	  56864	   de20	Lab2CTest.elf
+'Finished building: Lab2CTest.elf.size'
+' '
+19:34:40 **** Incremental Build of configuration Debug for project Lab2CTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lab2test.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab2test.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab2CTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2test.d" -MT"src/lab2test.o" -o "src/lab2test.o" "../src/lab2test.c"
+'Finished building: ../src/lab2test.c'
+' '
+'Building target: Lab2CTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab2CTest_bsp/ps7_cortexa9_0/lib -o "Lab2CTest.elf"  ./src/lab2test.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Lab2CTest.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Lab2CTest.elf  |tee "Lab2CTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  32048	   2184	  22632	  56864	   de20	Lab2CTest.elf
+'Finished building: Lab2CTest.elf.size'
+' '
+19:37:38 **** Incremental Build of configuration Debug for project Lab2CTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lab2test.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab2test.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab2CTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2test.d" -MT"src/lab2test.o" -o "src/lab2test.o" "../src/lab2test.c"
+'Finished building: ../src/lab2test.c'
+' '
+'Building target: Lab2CTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab2CTest_bsp/ps7_cortexa9_0/lib -o "Lab2CTest.elf"  ./src/lab2test.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Lab2CTest.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Lab2CTest.elf  |tee "Lab2CTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  32048	   2184	  22632	  56864	   de20	Lab2CTest.elf
+'Finished building: Lab2CTest.elf.size'
+' '
+19:40:03 **** Auto Build of configuration Debug for project Lab2CTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lab2test.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab2test.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab2CTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2test.d" -MT"src/lab2test.o" -o "src/lab2test.o" "../src/lab2test.c"
+../src/lab2test.c: In function 'main':
+../src/lab2test.c:55:20: error: expected ';' before 'l'
+  result = regmap[0]l;
+                    ^
+../src/lab2test.c: At top level:
+../src/lab2test.c:62:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+make: *** [src/subdir.mk:23: src/lab2test.o] Error 1
+19:40:09 **** Auto Build of configuration Debug for project Lab2CTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lab2test.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab2test.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab2CTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2test.d" -MT"src/lab2test.o" -o "src/lab2test.o" "../src/lab2test.c"
+../src/lab2test.c:62:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+make: *** [src/subdir.mk:23: src/lab2test.o] Error 1
+19:40:12 **** Auto Build of configuration Debug for project Lab2CTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lab2test.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab2test.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab2CTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2test.d" -MT"src/lab2test.o" -o "src/lab2test.o" "../src/lab2test.c"
+'Finished building: ../src/lab2test.c'
+' '
+'Building target: Lab2CTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab2CTest_bsp/ps7_cortexa9_0/lib -o "Lab2CTest.elf"  ./src/lab2test.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Lab2CTest.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Lab2CTest.elf  |tee "Lab2CTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  32048	   2184	  22632	  56864	   de20	Lab2CTest.elf
+'Finished building: Lab2CTest.elf.size'
+' '
+19:40:33 **** Incremental Build of configuration Debug for project Lab2CTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+19:48:57 **** Auto Build of configuration Debug for project Lab2CTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lab2test.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab2test.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab2CTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2test.d" -MT"src/lab2test.o" -o "src/lab2test.o" "../src/lab2test.c"
+'Finished building: ../src/lab2test.c'
+' '
+'Building target: Lab2CTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab2CTest_bsp/ps7_cortexa9_0/lib -o "Lab2CTest.elf"  ./src/lab2test.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Lab2CTest.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Lab2CTest.elf  |tee "Lab2CTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  32048	   2184	  22632	  56864	   de20	Lab2CTest.elf
+'Finished building: Lab2CTest.elf.size'
+' '
+19:53:50 **** Auto Build of configuration Debug for project Lab2CTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lab2test.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab2test.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab2CTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2test.d" -MT"src/lab2test.o" -o "src/lab2test.o" "../src/lab2test.c"
+'Finished building: ../src/lab2test.c'
+' '
+'Building target: Lab2CTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab2CTest_bsp/ps7_cortexa9_0/lib -o "Lab2CTest.elf"  ./src/lab2test.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Lab2CTest.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Lab2CTest.elf  |tee "Lab2CTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  32048	   2184	  22632	  56864	   de20	Lab2CTest.elf
+'Finished building: Lab2CTest.elf.size'
+' '
+19:54:06 **** Incremental Build of configuration Debug for project Lab2CTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+19:54:31 **** Incremental Build of configuration Debug for project Lab2CTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+19:56:18 **** Incremental Build of configuration Debug for project Lab2CTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lab2test.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab2test.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab2CTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2test.d" -MT"src/lab2test.o" -o "src/lab2test.o" "../src/lab2test.c"
+'Finished building: ../src/lab2test.c'
+' '
+'Building target: Lab2CTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab2CTest_bsp/ps7_cortexa9_0/lib -o "Lab2CTest.elf"  ./src/lab2test.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Lab2CTest.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Lab2CTest.elf  |tee "Lab2CTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  33312	   2184	  22632	  58128	   e310	Lab2CTest.elf
+'Finished building: Lab2CTest.elf.size'
+' '
+19:58:30 **** Auto Build of configuration Debug for project Lab2CTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lab2test.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab2test.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab2CTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2test.d" -MT"src/lab2test.o" -o "src/lab2test.o" "../src/lab2test.c"
+../src/lab2test.c: In function 'main':
+../src/lab2test.c:104:33: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+    printf("Bitwise XOR Failed, %d\n",result);
+                                ~^
+                                %ld
+'Finished building: ../src/lab2test.c'
+' '
+'Building target: Lab2CTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab2CTest_bsp/ps7_cortexa9_0/lib -o "Lab2CTest.elf"  ./src/lab2test.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Lab2CTest.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Lab2CTest.elf  |tee "Lab2CTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71932	   2580	  23328	  97840	  17e30	Lab2CTest.elf
+'Finished building: Lab2CTest.elf.size'
+' '
+19:59:31 **** Auto Build of configuration Debug for project Lab2CTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lab2test.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab2test.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab2CTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2test.d" -MT"src/lab2test.o" -o "src/lab2test.o" "../src/lab2test.c"
+'Finished building: ../src/lab2test.c'
+' '
+'Building target: Lab2CTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab2CTest_bsp/ps7_cortexa9_0/lib -o "Lab2CTest.elf"  ./src/lab2test.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Lab2CTest.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Lab2CTest.elf  |tee "Lab2CTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  33312	   2184	  22632	  58128	   e310	Lab2CTest.elf
+'Finished building: Lab2CTest.elf.size'
+' '
+19:59:40 **** Incremental Build of configuration Debug for project Lab2CTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+20:00:59 **** Auto Build of configuration Debug for project Lab2CTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lab2test.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab2test.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab2CTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2test.d" -MT"src/lab2test.o" -o "src/lab2test.o" "../src/lab2test.c"
+'Finished building: ../src/lab2test.c'
+' '
+'Building target: Lab2CTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab2CTest_bsp/ps7_cortexa9_0/lib -o "Lab2CTest.elf"  ./src/lab2test.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Lab2CTest.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Lab2CTest.elf  |tee "Lab2CTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  33312	   2184	  22632	  58128	   e310	Lab2CTest.elf
+'Finished building: Lab2CTest.elf.size'
+' '
+20:01:14 **** Incremental Build of configuration Debug for project Lab2CTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+20:03:34 **** Incremental Build of configuration Debug for project Lab2CTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+20:10:02 **** Auto Build of configuration Debug for project Lab2CTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lab2test.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab2test.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab2CTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2test.d" -MT"src/lab2test.o" -o "src/lab2test.o" "../src/lab2test.c"
+../src/lab2test.c: In function 'main':
+../src/lab2test.c:157:2: error: expected ';' before 'return'
+  return 0;
+  ^~~~~~
+make: *** [src/subdir.mk:23: src/lab2test.o] Error 1
+20:10:29 **** Auto Build of configuration Debug for project Lab2CTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lab2test.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab2test.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab2CTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2test.d" -MT"src/lab2test.o" -o "src/lab2test.o" "../src/lab2test.c"
+'Finished building: ../src/lab2test.c'
+' '
+'Building target: Lab2CTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab2CTest_bsp/ps7_cortexa9_0/lib -o "Lab2CTest.elf"  ./src/lab2test.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Lab2CTest.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Lab2CTest.elf  |tee "Lab2CTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  33808	   2184	  22632	  58624	   e500	Lab2CTest.elf
+'Finished building: Lab2CTest.elf.size'
+' '
+20:10:58 **** Incremental Build of configuration Debug for project Lab2CTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+20:12:56 **** Auto Build of configuration Debug for project Lab2CTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lab2test.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab2test.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab2CTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2test.d" -MT"src/lab2test.o" -o "src/lab2test.o" "../src/lab2test.c"
+'Finished building: ../src/lab2test.c'
+' '
+'Building target: Lab2CTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab2CTest_bsp/ps7_cortexa9_0/lib -o "Lab2CTest.elf"  ./src/lab2test.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Lab2CTest.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Lab2CTest.elf  |tee "Lab2CTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  33808	   2184	  22632	  58624	   e500	Lab2CTest.elf
+'Finished building: Lab2CTest.elf.size'
+' '
+20:13:07 **** Incremental Build of configuration Debug for project Lab2CTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+21:32:50 **** Auto Build of configuration Debug for project Lab2CTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lab2test.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab2test.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab2CTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2test.d" -MT"src/lab2test.o" -o "src/lab2test.o" "../src/lab2test.c"
+'Finished building: ../src/lab2test.c'
+' '
+'Building target: Lab2CTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab2CTest_bsp/ps7_cortexa9_0/lib -o "Lab2CTest.elf"  ./src/lab2test.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Lab2CTest.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Lab2CTest.elf  |tee "Lab2CTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  33808	   2184	  22632	  58624	   e500	Lab2CTest.elf
+'Finished building: Lab2CTest.elf.size'
+' '
+21:33:11 **** Auto Build of configuration Debug for project Lab2CTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lab2test.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab2test.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab2CTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2test.d" -MT"src/lab2test.o" -o "src/lab2test.o" "../src/lab2test.c"
+'Finished building: ../src/lab2test.c'
+' '
+'Building target: Lab2CTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab2CTest_bsp/ps7_cortexa9_0/lib -o "Lab2CTest.elf"  ./src/lab2test.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Lab2CTest.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Lab2CTest.elf  |tee "Lab2CTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  33808	   2184	  22632	  58624	   e500	Lab2CTest.elf
+'Finished building: Lab2CTest.elf.size'
+' '
+21:35:03 **** Incremental Build of configuration Debug for project Lab2CTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+21:36:54 **** Incremental Build of configuration Debug for project Lab2CTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+21:40:00 **** Auto Build of configuration Debug for project Lab2CTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lab2test.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab2test.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Lab2CTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2test.d" -MT"src/lab2test.o" -o "src/lab2test.o" "../src/lab2test.c"
+'Finished building: ../src/lab2test.c'
+' '
+'Building target: Lab2CTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Lab2CTest_bsp/ps7_cortexa9_0/lib -o "Lab2CTest.elf"  ./src/lab2test.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Lab2CTest.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Lab2CTest.elf  |tee "Lab2CTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  33808	   2184	  22632	  58624	   e500	Lab2CTest.elf
+'Finished building: Lab2CTest.elf.size'
+' '
+21:40:07 **** Incremental Build of configuration Debug for project Lab2CTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+11:39:36 **** Incremental Build of configuration Debug for project Lab2CTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.

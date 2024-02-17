@@ -1,0 +1,552 @@
+==============================================================
+File generated on Mon Dec 04 21:44:27 -0500 2023
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+WARNING: [HLS 200-40] Skipped source file 'rock512.pgm'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+INFO: [HLS 200-10] Analyzing design file '../../lab6_template/lab6_template/vhls/image.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file '../../lab6_template/lab6_template/vhls/convolution.cpp' ... 
+WARNING: [HLS 200-40] In file included from ../../lab6_template/lab6_template/vhls/convolution.cpp:1:
+../../lab6_template/lab6_template/vhls/convolution.cpp:61:14: warning: comparison of unsigned expression < 0 is always false [-Wtautological-compare]
+  if (result < 0)
+      ~~~~~~ ^ ~
+../../lab6_template/lab6_template/vhls/convolution.cpp:126:6: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+     auto temp = lbuf[it][i % (512 - 3)];
+     ^
+2 warnings generated.
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:17 . Memory (MB): peak = 112.355 ; gain = 21.512
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:17 . Memory (MB): peak = 112.355 ; gain = 21.512
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:18 . Memory (MB): peak = 116.613 ; gain = 25.770
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:02 ; elapsed = 00:00:18 . Memory (MB): peak = 119.723 ; gain = 28.879
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1' (../../lab6_template/lab6_template/vhls/convolution.cpp:93) in function 'hw_conv' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (../../lab6_template/lab6_template/vhls/convolution.cpp:102) in function 'hw_conv' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1' (../../lab6_template/lab6_template/vhls/convolution.cpp:106) in function 'hw_conv' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.2' (../../lab6_template/lab6_template/vhls/convolution.cpp:152) in function 'hw_conv' completely with a factor of 9.
+INFO: [XFORM 203-101] Partitioning array 'kbuf' (../../lab6_template/lab6_template/vhls/convolution.cpp:82) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'lbuf' (../../lab6_template/lab6_template/vhls/convolution.cpp:83) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'kbuf' (../../lab6_template/lab6_template/vhls/convolution.cpp:82) in dimension 2 completely.
+WARNING: [XFORM 203-104] Completely partitioning array 'lbuf' (../../lab6_template/lab6_template/vhls/convolution.cpp:83) accessed through non-constant indices on dimension 1 (../../lab6_template/lab6_template/vhls/convolution.cpp:126:41), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'lbuf' (../../lab6_template/lab6_template/vhls/convolution.cpp:83) in dimension 2 completely.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../../lab6_template/lab6_template/vhls/convolution.cpp:158:2) to (../../lab6_template/lab6_template/vhls/convolution.cpp:174:4) in function 'hw_conv'... converting 3 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'hw_conv' (../../lab6_template/lab6_template/vhls/convolution.cpp:73)...14 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:01:01 ; elapsed = 00:01:19 . Memory (MB): peak = 224.445 ; gain = 133.602
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:02:21 ; elapsed = 00:02:39 . Memory (MB): peak = 224.445 ; gain = 133.602
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'hw_conv' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'hw_conv' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 4.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 174.084 seconds; current allocated memory: 163.400 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 6.117 seconds; current allocated memory: 182.947 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'hw_conv' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'hw_conv/sin_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hw_conv/sin_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hw_conv/sin_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hw_conv/sin_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hw_conv/sin_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hw_conv/sin_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hw_conv/sin_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hw_conv/sout_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hw_conv/sout_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hw_conv/sout_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hw_conv/sout_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hw_conv/sout_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hw_conv/sout_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hw_conv/sout_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'hw_conv' to 'ap_ctrl_none'.
+INFO: [SYN 201-210] Renamed object name 'hw_conv_mux_5099_8_1_1' to 'hw_conv_mux_5099_bkb' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'hw_conv_mux_5099_bkb': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'hw_conv'.
+INFO: [HLS 200-111]  Elapsed time: 7.884 seconds; current allocated memory: 202.746 MB.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:02:58 ; elapsed = 00:03:17 . Memory (MB): peak = 342.129 ; gain = 251.285
+INFO: [SYSC 207-301] Generating SystemC RTL for hw_conv.
+INFO: [VHDL 208-304] Generating VHDL RTL for hw_conv.
+INFO: [VLOG 209-307] Generating Verilog RTL for hw_conv.
+INFO: [HLS 200-112] Total elapsed time: 197.545 seconds; peak allocated memory: 202.746 MB.
+==============================================================
+File generated on Mon Dec 04 21:49:45 -0500 2023
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim file generation done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+File generated on Tue Dec 05 11:18:39 -0500 2023
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+WARNING: [HLS 200-40] Skipped source file 'rock512.pgm'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+INFO: [HLS 200-10] Analyzing design file '../../lab6_template/lab6_template/vhls/image.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file '../../lab6_template/lab6_template/vhls/convolution.cpp' ... 
+WARNING: [HLS 200-40] In file included from ../../lab6_template/lab6_template/vhls/convolution.cpp:1:
+../../lab6_template/lab6_template/vhls/convolution.cpp:61:14: warning: comparison of unsigned expression < 0 is always false [-Wtautological-compare]
+  if (result < 0)
+      ~~~~~~ ^ ~
+1 warning generated.
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:18 . Memory (MB): peak = 112.691 ; gain = 37.344
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:18 . Memory (MB): peak = 112.691 ; gain = 37.344
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:19 . Memory (MB): peak = 116.891 ; gain = 41.543
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:02 ; elapsed = 00:00:20 . Memory (MB): peak = 119.852 ; gain = 44.504
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1' (../../lab6_template/lab6_template/vhls/convolution.cpp:93) in function 'hw_conv' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (../../lab6_template/lab6_template/vhls/convolution.cpp:102) in function 'hw_conv' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1' (../../lab6_template/lab6_template/vhls/convolution.cpp:106) in function 'hw_conv' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.2' (../../lab6_template/lab6_template/vhls/convolution.cpp:152) in function 'hw_conv' completely with a factor of 9.
+INFO: [XFORM 203-101] Partitioning array 'kbuf' (../../lab6_template/lab6_template/vhls/convolution.cpp:82) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'lbuf' (../../lab6_template/lab6_template/vhls/convolution.cpp:83) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'kbuf' (../../lab6_template/lab6_template/vhls/convolution.cpp:82) in dimension 2 completely.
+WARNING: [XFORM 203-104] Completely partitioning array 'lbuf' (../../lab6_template/lab6_template/vhls/convolution.cpp:83) accessed through non-constant indices on dimension 1 (../../lab6_template/lab6_template/vhls/convolution.cpp:126:44), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'lbuf' (../../lab6_template/lab6_template/vhls/convolution.cpp:83) in dimension 2 completely.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../../lab6_template/lab6_template/vhls/convolution.cpp:158:2) to (../../lab6_template/lab6_template/vhls/convolution.cpp:174:4) in function 'hw_conv'... converting 3 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'hw_conv' (../../lab6_template/lab6_template/vhls/convolution.cpp:73)...14 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:01:00 ; elapsed = 00:01:19 . Memory (MB): peak = 223.625 ; gain = 148.277
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:02:20 ; elapsed = 00:02:39 . Memory (MB): peak = 223.625 ; gain = 148.277
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'hw_conv' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'hw_conv' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 4.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 175.127 seconds; current allocated memory: 163.367 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 6.814 seconds; current allocated memory: 182.930 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'hw_conv' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'hw_conv/sin_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hw_conv/sin_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hw_conv/sin_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hw_conv/sin_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hw_conv/sin_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hw_conv/sin_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hw_conv/sin_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hw_conv/sout_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hw_conv/sout_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hw_conv/sout_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hw_conv/sout_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hw_conv/sout_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hw_conv/sout_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hw_conv/sout_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'hw_conv' to 'ap_ctrl_none'.
+INFO: [SYN 201-210] Renamed object name 'hw_conv_mux_5099_8_1_1' to 'hw_conv_mux_5099_bkb' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'hw_conv_mux_5099_bkb': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'hw_conv'.
+INFO: [HLS 200-111]  Elapsed time: 8.921 seconds; current allocated memory: 202.745 MB.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:02:56 ; elapsed = 00:03:21 . Memory (MB): peak = 343.355 ; gain = 268.008
+INFO: [SYSC 207-301] Generating SystemC RTL for hw_conv.
+INFO: [VHDL 208-304] Generating VHDL RTL for hw_conv.
+INFO: [VLOG 209-307] Generating Verilog RTL for hw_conv.
+INFO: [HLS 200-112] Total elapsed time: 201.165 seconds; peak allocated memory: 202.745 MB.
+==============================================================
+File generated on Tue Dec 05 11:22:47 -0500 2023
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim file generation done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+File generated on Tue Dec 05 11:24:53 -0500 2023
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+WARNING: [HLS 200-40] Skipped source file 'rock512.pgm'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+INFO: [HLS 200-10] Analyzing design file '../../lab6_template/lab6_template/vhls/image.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file '../../lab6_template/lab6_template/vhls/convolution.cpp' ... 
+WARNING: [HLS 200-40] In file included from ../../lab6_template/lab6_template/vhls/convolution.cpp:1:
+../../lab6_template/lab6_template/vhls/convolution.cpp:61:14: warning: comparison of unsigned expression < 0 is always false [-Wtautological-compare]
+  if (result < 0)
+      ~~~~~~ ^ ~
+1 warning generated.
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:18 . Memory (MB): peak = 112.258 ; gain = 21.586
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:18 . Memory (MB): peak = 112.258 ; gain = 21.586
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [XFORM 203-501] Unrolling loop 'Loop-1.1' (../../lab6_template/lab6_template/vhls/convolution.cpp:102) in function 'hw_conv(hls::stream<ap_axis<8, 1, 1, 1> >&, hls::stream<ap_axis<8, 1, 1, 1> >&)': changing partial unrolling into complete unrolling since the unrolling factor (=4) is no less than the loop trip count (=3).
+INFO: [XFORM 203-501] Unrolling loop 'Loop-1.1.1' (../../lab6_template/lab6_template/vhls/convolution.cpp:106) in function 'hw_conv(hls::stream<ap_axis<8, 1, 1, 1> >&, hls::stream<ap_axis<8, 1, 1, 1> >&)': changing partial unrolling into complete unrolling since the unrolling factor (=4) is no less than the loop trip count (=2).
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:02 ; elapsed = 00:00:19 . Memory (MB): peak = 117.898 ; gain = 27.227
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:02 ; elapsed = 00:00:19 . Memory (MB): peak = 119.957 ; gain = 29.285
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1' (../../lab6_template/lab6_template/vhls/convolution.cpp:93) in function 'hw_conv' for pipelining.
+WARNING: [XFORM 203-503] Ignored partial unroll directive for loop 'Loop-1.1' (../../lab6_template/lab6_template/vhls/convolution.cpp:102) because its parent loop or function is pipelined.
+WARNING: [XFORM 203-503] Ignored partial unroll directive for loop 'Loop-1.1.1' (../../lab6_template/lab6_template/vhls/convolution.cpp:106) because its parent loop or function is pipelined.
+WARNING: [XFORM 203-503] Ignored partial unroll directive for loop 'Loop-1.2' (../../lab6_template/lab6_template/vhls/convolution.cpp:152) because its parent loop or function is pipelined.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (../../lab6_template/lab6_template/vhls/convolution.cpp:102) in function 'hw_conv' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1' (../../lab6_template/lab6_template/vhls/convolution.cpp:106) in function 'hw_conv' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.2' (../../lab6_template/lab6_template/vhls/convolution.cpp:152) in function 'hw_conv' completely with a factor of 9.
+INFO: [XFORM 203-101] Partitioning array 'kbuf' (../../lab6_template/lab6_template/vhls/convolution.cpp:82) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'lbuf' (../../lab6_template/lab6_template/vhls/convolution.cpp:83) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'kbuf' (../../lab6_template/lab6_template/vhls/convolution.cpp:82) in dimension 2 completely.
+WARNING: [XFORM 203-104] Completely partitioning array 'lbuf' (../../lab6_template/lab6_template/vhls/convolution.cpp:83) accessed through non-constant indices on dimension 1 (../../lab6_template/lab6_template/vhls/convolution.cpp:126:44), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'lbuf' (../../lab6_template/lab6_template/vhls/convolution.cpp:83) in dimension 2 completely.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../../lab6_template/lab6_template/vhls/convolution.cpp:158:2) to (../../lab6_template/lab6_template/vhls/convolution.cpp:174:4) in function 'hw_conv'... converting 3 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'hw_conv' (../../lab6_template/lab6_template/vhls/convolution.cpp:73)...14 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:01:01 ; elapsed = 00:01:19 . Memory (MB): peak = 224.672 ; gain = 134.000
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:02:21 ; elapsed = 00:02:39 . Memory (MB): peak = 224.672 ; gain = 134.000
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'hw_conv' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'hw_conv' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 4.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 174.156 seconds; current allocated memory: 163.374 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 6.212 seconds; current allocated memory: 182.937 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'hw_conv' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'hw_conv/sin_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hw_conv/sin_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hw_conv/sin_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hw_conv/sin_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hw_conv/sin_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hw_conv/sin_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hw_conv/sin_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hw_conv/sout_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hw_conv/sout_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hw_conv/sout_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hw_conv/sout_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hw_conv/sout_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hw_conv/sout_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hw_conv/sout_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'hw_conv' to 'ap_ctrl_none'.
+INFO: [SYN 201-210] Renamed object name 'hw_conv_mux_5099_8_1_1' to 'hw_conv_mux_5099_bkb' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'hw_conv_mux_5099_bkb': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'hw_conv'.
+INFO: [HLS 200-111]  Elapsed time: 8.443 seconds; current allocated memory: 202.752 MB.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:02:57 ; elapsed = 00:03:20 . Memory (MB): peak = 342.453 ; gain = 251.781
+INFO: [SYSC 207-301] Generating SystemC RTL for hw_conv.
+INFO: [VHDL 208-304] Generating VHDL RTL for hw_conv.
+INFO: [VLOG 209-307] Generating Verilog RTL for hw_conv.
+INFO: [HLS 200-112] Total elapsed time: 199.825 seconds; peak allocated memory: 202.752 MB.
+==============================================================
+File generated on Tue Dec 05 11:36:03 -0500 2023
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+WARNING: [HLS 200-40] Skipped source file 'rock512.pgm'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+INFO: [HLS 200-10] Analyzing design file '../../lab6_template/lab6_template/vhls/image.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file '../../lab6_template/lab6_template/vhls/convolution.cpp' ... 
+WARNING: [HLS 200-40] In file included from ../../lab6_template/lab6_template/vhls/convolution.cpp:1:
+../../lab6_template/lab6_template/vhls/convolution.cpp:61:14: warning: comparison of unsigned expression < 0 is always false [-Wtautological-compare]
+  if (result < 0)
+      ~~~~~~ ^ ~
+1 warning generated.
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:18 . Memory (MB): peak = 112.547 ; gain = 21.582
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:18 . Memory (MB): peak = 112.547 ; gain = 21.582
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:19 . Memory (MB): peak = 117.266 ; gain = 26.301
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:02 ; elapsed = 00:00:19 . Memory (MB): peak = 120.195 ; gain = 29.230
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1' (../../lab6_template/lab6_template/vhls/convolution.cpp:92) in function 'hw_conv' for pipelining.
+WARNING: [XFORM 203-503] Ignored partial unroll directive for loop 'Loop-1.2' (../../lab6_template/lab6_template/vhls/convolution.cpp:151) because its parent loop or function is pipelined.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (../../lab6_template/lab6_template/vhls/convolution.cpp:101) in function 'hw_conv' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1' (../../lab6_template/lab6_template/vhls/convolution.cpp:105) in function 'hw_conv' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.2' (../../lab6_template/lab6_template/vhls/convolution.cpp:151) in function 'hw_conv' completely with a factor of 9.
+INFO: [XFORM 203-102] Partitioning array 'kbuf' (../../lab6_template/lab6_template/vhls/convolution.cpp:82) in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'kbuf.0' (../../lab6_template/lab6_template/vhls/convolution.cpp:82) automatically.
+INFO: [XFORM 203-102] Partitioning array 'kbuf.1' (../../lab6_template/lab6_template/vhls/convolution.cpp:82) automatically.
+INFO: [XFORM 203-102] Partitioning array 'kbuf.2' (../../lab6_template/lab6_template/vhls/convolution.cpp:82) automatically.
+INFO: [XFORM 203-101] Partitioning array 'lbuf' (../../lab6_template/lab6_template/vhls/convolution.cpp:83) in dimension 1 completely.
+WARNING: [XFORM 203-104] Completely partitioning array 'lbuf' (../../lab6_template/lab6_template/vhls/convolution.cpp:83) accessed through non-constant indices on dimension 1 (../../lab6_template/lab6_template/vhls/convolution.cpp:125:44), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'lbuf' (../../lab6_template/lab6_template/vhls/convolution.cpp:83) in dimension 2 completely.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../../lab6_template/lab6_template/vhls/convolution.cpp:157:2) to (../../lab6_template/lab6_template/vhls/convolution.cpp:173:4) in function 'hw_conv'... converting 3 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'hw_conv' (../../lab6_template/lab6_template/vhls/convolution.cpp:73)...14 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:01:01 ; elapsed = 00:01:19 . Memory (MB): peak = 225.352 ; gain = 134.387
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:02:21 ; elapsed = 00:02:39 . Memory (MB): peak = 225.352 ; gain = 134.387
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'hw_conv' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'hw_conv' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 4.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 173.847 seconds; current allocated memory: 163.399 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 6.156 seconds; current allocated memory: 182.946 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'hw_conv' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'hw_conv/sin_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hw_conv/sin_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hw_conv/sin_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hw_conv/sin_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hw_conv/sin_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hw_conv/sin_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hw_conv/sin_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hw_conv/sout_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hw_conv/sout_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hw_conv/sout_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hw_conv/sout_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hw_conv/sout_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hw_conv/sout_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hw_conv/sout_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'hw_conv' to 'ap_ctrl_none'.
+INFO: [SYN 201-210] Renamed object name 'hw_conv_mux_5099_8_1_1' to 'hw_conv_mux_5099_bkb' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'hw_conv_mux_5099_bkb': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'hw_conv'.
+INFO: [HLS 200-111]  Elapsed time: 7.919 seconds; current allocated memory: 202.761 MB.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:02:57 ; elapsed = 00:03:17 . Memory (MB): peak = 343.332 ; gain = 252.367
+INFO: [SYSC 207-301] Generating SystemC RTL for hw_conv.
+INFO: [VHDL 208-304] Generating VHDL RTL for hw_conv.
+INFO: [VLOG 209-307] Generating Verilog RTL for hw_conv.
+INFO: [HLS 200-112] Total elapsed time: 197.403 seconds; peak allocated memory: 202.761 MB.
+==============================================================
+File generated on Tue Dec 05 11:39:33 -0500 2023
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim file generation done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+File generated on Tue Dec 05 16:12:31 -0500 2023
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+WARNING: [HLS 200-40] Skipped source file 'rock512.pgm'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+INFO: [HLS 200-10] Analyzing design file '../../lab6_template/lab6_template/vhls/image.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file '../../lab6_template/lab6_template/vhls/convolution.cpp' ... 
+WARNING: [HLS 200-40] In file included from ../../lab6_template/lab6_template/vhls/convolution.cpp:1:
+../../lab6_template/lab6_template/vhls/convolution.cpp:61:14: warning: comparison of unsigned expression < 0 is always false [-Wtautological-compare]
+  if (result < 0)
+      ~~~~~~ ^ ~
+1 warning generated.
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:19 . Memory (MB): peak = 112.590 ; gain = 21.703
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:19 . Memory (MB): peak = 112.590 ; gain = 21.703
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:02 ; elapsed = 00:00:20 . Memory (MB): peak = 116.863 ; gain = 25.977
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:02 ; elapsed = 00:00:20 . Memory (MB): peak = 119.789 ; gain = 28.902
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1' (../../lab6_template/lab6_template/vhls/convolution.cpp:92) in function 'hw_conv' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (../../lab6_template/lab6_template/vhls/convolution.cpp:101) in function 'hw_conv' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1' (../../lab6_template/lab6_template/vhls/convolution.cpp:105) in function 'hw_conv' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.2' (../../lab6_template/lab6_template/vhls/convolution.cpp:151) in function 'hw_conv' completely with a factor of 9.
+INFO: [XFORM 203-102] Partitioning array 'kbuf' (../../lab6_template/lab6_template/vhls/convolution.cpp:82) in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'kbuf.0' (../../lab6_template/lab6_template/vhls/convolution.cpp:82) automatically.
+INFO: [XFORM 203-102] Partitioning array 'kbuf.1' (../../lab6_template/lab6_template/vhls/convolution.cpp:82) automatically.
+INFO: [XFORM 203-102] Partitioning array 'kbuf.2' (../../lab6_template/lab6_template/vhls/convolution.cpp:82) automatically.
+INFO: [XFORM 203-101] Partitioning array 'lbuf' (../../lab6_template/lab6_template/vhls/convolution.cpp:83) in dimension 1 completely.
+WARNING: [XFORM 203-104] Completely partitioning array 'lbuf' (../../lab6_template/lab6_template/vhls/convolution.cpp:83) accessed through non-constant indices on dimension 1 (../../lab6_template/lab6_template/vhls/convolution.cpp:125:44), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'lbuf' (../../lab6_template/lab6_template/vhls/convolution.cpp:83) in dimension 2 completely.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../../lab6_template/lab6_template/vhls/convolution.cpp:157:2) to (../../lab6_template/lab6_template/vhls/convolution.cpp:173:4) in function 'hw_conv'... converting 3 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'hw_conv' (../../lab6_template/lab6_template/vhls/convolution.cpp:73)...14 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:01:02 ; elapsed = 00:01:21 . Memory (MB): peak = 224.258 ; gain = 133.371
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:02:24 ; elapsed = 00:02:43 . Memory (MB): peak = 224.258 ; gain = 133.371
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'hw_conv' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'hw_conv' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 4.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 179.01 seconds; current allocated memory: 163.371 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 6.277 seconds; current allocated memory: 182.934 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'hw_conv' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'hw_conv/sin_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hw_conv/sin_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hw_conv/sin_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hw_conv/sin_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hw_conv/sin_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hw_conv/sin_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hw_conv/sin_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hw_conv/sout_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hw_conv/sout_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hw_conv/sout_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hw_conv/sout_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hw_conv/sout_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hw_conv/sout_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hw_conv/sout_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'hw_conv' to 'ap_ctrl_none'.
+INFO: [SYN 201-210] Renamed object name 'hw_conv_mux_5099_8_1_1' to 'hw_conv_mux_5099_bkb' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'hw_conv_mux_5099_bkb': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'hw_conv'.
+INFO: [HLS 200-111]  Elapsed time: 8.107 seconds; current allocated memory: 202.750 MB.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:03:02 ; elapsed = 00:03:24 . Memory (MB): peak = 343.066 ; gain = 252.180
+INFO: [SYSC 207-301] Generating SystemC RTL for hw_conv.
+INFO: [VHDL 208-304] Generating VHDL RTL for hw_conv.
+INFO: [VLOG 209-307] Generating Verilog RTL for hw_conv.
+INFO: [HLS 200-112] Total elapsed time: 203.881 seconds; peak allocated memory: 202.750 MB.
+==============================================================
+File generated on Tue Dec 05 16:16:12 -0500 2023
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim file generation done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+File generated on Tue Dec 05 19:49:11 -0500 2023
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+WARNING: [HLS 200-40] Skipped source file 'rock512.pgm'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+INFO: [HLS 200-10] Analyzing design file '../../lab6_template/lab6_template/vhls/image.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file '../../lab6_template/lab6_template/vhls/convolution.cpp' ... 
+WARNING: [HLS 200-40] In file included from ../../lab6_template/lab6_template/vhls/convolution.cpp:1:
+../../lab6_template/lab6_template/vhls/convolution.cpp:33:20: warning: comparison of unsigned expression < 0 is always false [-Wtautological-compare]
+   else if (result < 0)
+            ~~~~~~ ^ ~
+1 warning generated.
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:17 . Memory (MB): peak = 112.336 ; gain = 21.578
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:17 . Memory (MB): peak = 112.336 ; gain = 21.578
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:19 . Memory (MB): peak = 116.727 ; gain = 25.969
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:02 ; elapsed = 00:00:19 . Memory (MB): peak = 119.844 ; gain = 29.086
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1' (../../lab6_template/lab6_template/vhls/convolution.cpp:57) in function 'hw_conv' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (../../lab6_template/lab6_template/vhls/convolution.cpp:66) in function 'hw_conv' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1' (../../lab6_template/lab6_template/vhls/convolution.cpp:70) in function 'hw_conv' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.2' (../../lab6_template/lab6_template/vhls/convolution.cpp:116) in function 'hw_conv' completely with a factor of 9.
+INFO: [XFORM 203-102] Partitioning array 'kbuf' (../../lab6_template/lab6_template/vhls/convolution.cpp:49) in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'kbuf.0' (../../lab6_template/lab6_template/vhls/convolution.cpp:49) automatically.
+INFO: [XFORM 203-102] Partitioning array 'kbuf.1' (../../lab6_template/lab6_template/vhls/convolution.cpp:49) automatically.
+INFO: [XFORM 203-102] Partitioning array 'kbuf.2' (../../lab6_template/lab6_template/vhls/convolution.cpp:49) automatically.
+INFO: [XFORM 203-101] Partitioning array 'lbuf' (../../lab6_template/lab6_template/vhls/convolution.cpp:50) in dimension 1 completely.
+WARNING: [XFORM 203-104] Completely partitioning array 'lbuf' (../../lab6_template/lab6_template/vhls/convolution.cpp:50) accessed through non-constant indices on dimension 1 (../../lab6_template/lab6_template/vhls/convolution.cpp:95:46), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'lbuf' (../../lab6_template/lab6_template/vhls/convolution.cpp:50) in dimension 2 completely.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../../lab6_template/lab6_template/vhls/convolution.cpp:122:2) to (../../lab6_template/lab6_template/vhls/convolution.cpp:136:4) in function 'hw_conv'... converting 3 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'hw_conv' (../../lab6_template/lab6_template/vhls/convolution.cpp:43)...14 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:01:31 ; elapsed = 00:01:49 . Memory (MB): peak = 224.285 ; gain = 133.527
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:03:18 ; elapsed = 00:03:36 . Memory (MB): peak = 224.285 ; gain = 133.527
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'hw_conv' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'hw_conv' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 4.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 231.59 seconds; current allocated memory: 163.371 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 6.145 seconds; current allocated memory: 182.934 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'hw_conv' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'hw_conv/sin_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hw_conv/sin_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hw_conv/sin_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hw_conv/sin_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hw_conv/sin_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hw_conv/sin_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hw_conv/sin_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hw_conv/sout_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hw_conv/sout_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hw_conv/sout_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hw_conv/sout_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hw_conv/sout_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hw_conv/sout_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hw_conv/sout_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'hw_conv' to 'ap_ctrl_none'.
+INFO: [SYN 201-210] Renamed object name 'hw_conv_mux_5099_8_1_1' to 'hw_conv_mux_5099_bkb' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'hw_conv_mux_5099_bkb': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'hw_conv'.
+INFO: [HLS 200-111]  Elapsed time: 8.099 seconds; current allocated memory: 202.750 MB.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:03:55 ; elapsed = 00:04:15 . Memory (MB): peak = 342.445 ; gain = 251.688
+INFO: [SYSC 207-301] Generating SystemC RTL for hw_conv.
+INFO: [VHDL 208-304] Generating VHDL RTL for hw_conv.
+INFO: [VLOG 209-307] Generating Verilog RTL for hw_conv.
+INFO: [HLS 200-112] Total elapsed time: 255.513 seconds; peak allocated memory: 202.750 MB.

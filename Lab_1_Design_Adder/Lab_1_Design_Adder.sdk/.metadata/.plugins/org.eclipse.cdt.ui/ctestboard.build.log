@@ -1,0 +1,23 @@
+16:34:15 **** Auto Build of configuration Debug for project ctestboard ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ctestboard8.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ctestboard8.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ctestboard_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ctestboard8.d" -MT"src/ctestboard8.o" -o "src/ctestboard8.o" "../src/ctestboard8.c"
+'Finished building: ../src/ctestboard8.c'
+' '
+'Building target: ctestboard.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ctestboard_bsp/ps7_cortexa9_0/lib -o "ctestboard.elf"  ./src/ctestboard8.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ctestboard.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ctestboard.elf  |tee "ctestboard.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71452	   2580	  23328	  97360	  17c50	ctestboard.elf
+'Finished building: ctestboard.elf.size'
+' '
+
+16:34:16 Build Finished (took 755ms)
+

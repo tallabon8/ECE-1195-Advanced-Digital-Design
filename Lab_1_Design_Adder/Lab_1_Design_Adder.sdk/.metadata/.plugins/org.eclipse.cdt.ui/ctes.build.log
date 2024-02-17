@@ -1,0 +1,66 @@
+16:33:43 **** Auto Build of configuration Debug for project ctes ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ctest.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ctest.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ctes_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ctest.d" -MT"src/ctest.o" -o "src/ctest.o" "../src/ctest.c"
+../src/ctest.c: In function 'main':
+../src/ctest.c:25:18: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+   printf("Cout =%\n", t);//print carry
+                  ^~
+../src/ctest.c:25:10: warning: too many arguments for format [-Wformat-extra-args]
+   printf("Cout =%\n", t);//print carry
+          ^~~~~~~~~~~
+../src/ctest.c:34:18: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+   printf("Cout =%\n", t);//print carry
+                  ^~
+../src/ctest.c:34:10: warning: too many arguments for format [-Wformat-extra-args]
+   printf("Cout =%\n", t);//print carry
+          ^~~~~~~~~~~
+../src/ctest.c:43:18: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+   printf("Cout =%\n", t);//print carry
+                  ^~
+../src/ctest.c:43:10: warning: too many arguments for format [-Wformat-extra-args]
+   printf("Cout =%\n", t);//print carry
+          ^~~~~~~~~~~
+../src/ctest.c:52:18: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+   printf("Cout =%\n", t);//print carry
+                  ^~
+../src/ctest.c:52:10: warning: too many arguments for format [-Wformat-extra-args]
+   printf("Cout =%\n", t);//print carry
+          ^~~~~~~~~~~
+../src/ctest.c:62:18: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+   printf("Cout =%\n", t);//print carry
+                  ^~
+../src/ctest.c:62:10: warning: too many arguments for format [-Wformat-extra-args]
+   printf("Cout =%\n", t);//print carry
+          ^~~~~~~~~~~
+../src/ctest.c:71:18: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+   printf("Cout =%\n", t);//print carry
+                  ^~
+../src/ctest.c:71:10: warning: too many arguments for format [-Wformat-extra-args]
+   printf("Cout =%\n", t);//print carry
+          ^~~~~~~~~~~
+../src/ctest.c:81:18: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+   printf("Cout =%\n", t);//print carry
+                  ^~
+../src/ctest.c:81:10: warning: too many arguments for format [-Wformat-extra-args]
+   printf("Cout =%\n", t);//print carry
+          ^~~~~~~~~~~
+'Finished building: ../src/ctest.c'
+' '
+'Building target: ctes.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ctes_bsp/ps7_cortexa9_0/lib -o "ctes.elf"  ./src/ctest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ctes.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ctes.elf  |tee "ctes.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71000	   2580	  23328	  96908	  17a8c	ctes.elf
+'Finished building: ctes.elf.size'
+' '
+
+16:33:44 Build Finished (took 1s.68ms)
+

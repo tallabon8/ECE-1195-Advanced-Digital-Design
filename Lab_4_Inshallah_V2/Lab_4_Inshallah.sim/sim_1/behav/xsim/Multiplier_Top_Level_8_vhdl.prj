@@ -1,0 +1,10 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Lab_4_Inshallah.srcs/sources_1/new/adder_64_bit_8.vhd" \
+"../../../../Lab_4_Inshallah.srcs/sources_1/new/mult_control_unit_8.vhd" \
+"../../../../Lab_4_Inshallah.srcs/sources_1/new/shift_32_bit_8.vhd" \
+"../../../../Lab_4_Inshallah.srcs/sources_1/new/shift_64_bit_8.vhd" \
+"../../../../Lab_4_Inshallah.srcs/sources_1/new/Multiplier_Top_Level_8.vhd" \
+
+# Do not sort compile order
+nosort

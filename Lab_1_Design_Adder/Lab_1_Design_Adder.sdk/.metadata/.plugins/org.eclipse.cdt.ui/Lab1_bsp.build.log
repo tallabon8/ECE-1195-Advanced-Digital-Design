@@ -1,0 +1,6 @@
+11:13:04 **** Build of project lab1_bsp ****
+make -k all 
+make: *** No rule to make target 'all'.
+
+11:13:04 Build Finished (took 141ms)
+

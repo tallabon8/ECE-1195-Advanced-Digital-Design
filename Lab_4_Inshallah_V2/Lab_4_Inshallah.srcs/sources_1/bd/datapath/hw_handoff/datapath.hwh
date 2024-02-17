@@ -1,0 +1,1166 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Nov  6 16:26:25 2023" VIVADOVERSION="2018.3">
+
+  <SYSTEMINFO ARCH="zynq" BOARD="www.digilentinc.com:pynq-z1:part0:1.0" DEVICE="7z020" NAME="datapath" PACKAGE="clg400" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="CLK_0" SIGIS="clk" SIGNAME="External_Ports_CLK_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Reg_B_8_0" PORT="CLK"/>
+        <CONNECTION INSTANCE="PC_8_0" PORT="CLK"/>
+        <CONNECTION INSTANCE="ALUOut_8_0" PORT="CLK"/>
+        <CONNECTION INSTANCE="Reg_A_8_0" PORT="CLK"/>
+        <CONNECTION INSTANCE="Instruction_Register_0" PORT="CLK"/>
+        <CONNECTION INSTANCE="Memory_Data_Register_0" PORT="CLK"/>
+        <CONNECTION INSTANCE="register_file_8_0" PORT="CLK"/>
+        <CONNECTION INSTANCE="HILO_reg_0" PORT="CLK"/>
+        <CONNECTION INSTANCE="HILO_reg_1" PORT="CLK"/>
+        <CONNECTION INSTANCE="Control_Unit_8_0" PORT="CLK"/>
+        <CONNECTION INSTANCE="Multiplier_32_bit_0" PORT="CLK"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="RST_0" SIGIS="rst" SIGNAME="External_Ports_RST_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Reg_B_8_0" PORT="RST"/>
+        <CONNECTION INSTANCE="PC_8_0" PORT="RST"/>
+        <CONNECTION INSTANCE="ALUOut_8_0" PORT="RST"/>
+        <CONNECTION INSTANCE="Reg_A_8_0" PORT="RST"/>
+        <CONNECTION INSTANCE="Instruction_Register_0" PORT="RST"/>
+        <CONNECTION INSTANCE="Memory_Data_Register_0" PORT="RST"/>
+        <CONNECTION INSTANCE="register_file_8_0" PORT="RST"/>
+        <CONNECTION INSTANCE="HILO_reg_0" PORT="RST"/>
+        <CONNECTION INSTANCE="HILO_reg_1" PORT="RST"/>
+        <CONNECTION INSTANCE="Control_Unit_8_0" PORT="RST"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="MemWrite" SIGIS="undef" SIGNAME="Control_Unit_8_0_MemWrite">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Control_Unit_8_0" PORT="MemWrite"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="31" NAME="MemoryAddress" RIGHT="0" SIGIS="undef" SIGNAME="two2one_mux_8_0_R">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="two2one_mux_8_0" PORT="R"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="31" NAME="Bout" RIGHT="0" SIGIS="undef" SIGNAME="Reg_B_8_0_B_Q">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Reg_B_8_0" PORT="B_Q"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="31" NAME="MemoryDataIn" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_MemoryDataIn">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Memory_Data_Register_0" PORT="MemData"/>
+        <CONNECTION INSTANCE="Instruction_Register_0" PORT="MemData"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="1" FULLNAME="/ALUOut_8_0" HWVERSION="1.0" INSTANCE="ALUOut_8_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="ALUOut_8" VLNV="xilinx.com:module_ref:ALUOut_8:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="datapath_ALUOut_8_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="CLK" SIGIS="clk" SIGNAME="External_Ports_CLK_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CLK_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="EN" SIGIS="undef" SIGNAME="Control_Unit_8_0_ALUWrite">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Control_Unit_8_0" PORT="ALUWrite"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="RST" SIGIS="rst" SIGNAME="External_Ports_RST_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="RST_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="ALUResult" RIGHT="0" SIGIS="undef" SIGNAME="two2one_mux_8_3_R">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="two2one_mux_8_3" PORT="R"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="ALUOut" RIGHT="0" SIGIS="undef" SIGNAME="ALUOut_8_0_ALUOut">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="four2three_mux_8_0" PORT="B"/>
+            <CONNECTION INSTANCE="two2one_mux_8_0" PORT="B"/>
+            <CONNECTION INSTANCE="loading_mux_0" PORT="A"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/ALU_0" HWVERSION="1.0" INSTANCE="ALU_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="ALU" VLNV="xilinx.com:module_ref:ALU:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="n" VALUE="32"/>
+        <PARAMETER NAME="Component_Name" VALUE="datapath_ALU_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="A" RIGHT="0" SIGIS="undef" SIGNAME="two2one_mux_8_2_R">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="two2one_mux_8_2" PORT="R"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="B" RIGHT="0" SIGIS="undef" SIGNAME="four2two_mux_8_0_R">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="four2two_mux_8_0" PORT="R"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="4" NAME="SHAMT" RIGHT="0" SIGIS="undef" SIGNAME="fivebit_2to1_mux_8_1_R">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="fivebit_2to1_mux_8_1" PORT="R"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="ALUOp" RIGHT="0" SIGIS="undef" SIGNAME="Control_Unit_8_0_ALUOp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Control_Unit_8_0" PORT="ALUOp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="R" RIGHT="0" SIGIS="undef" SIGNAME="ALU_0_R">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="two2one_mux_8_3" PORT="A"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="zero" SIGIS="undef" SIGNAME="ALU_0_zero">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Two2one_1bit_mux_0" PORT="B"/>
+            <CONNECTION INSTANCE="Two2one_1bit_mux_0" PORT="A"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="overflow" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/Control_Unit_8_0" HWVERSION="1.0" INSTANCE="Control_Unit_8_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Control_Unit_8" VLNV="xilinx.com:module_ref:Control_Unit_8:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="datapath_Control_Unit_8_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="CLK" SIGIS="clk" SIGNAME="External_Ports_CLK_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CLK_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="RST" SIGIS="rst" SIGNAME="External_Ports_RST_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="RST_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="DONE_FLAG" SIGIS="undef" SIGNAME="Multiplier_32_bit_0_DONE">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Multiplier_32_bit_0" PORT="DONE"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="5" NAME="OpCode" RIGHT="0" SIGIS="undef" SIGNAME="Instruction_Register_0_Instr31to26">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Instruction_Register_0" PORT="Instr31to26"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="5" NAME="Funct" RIGHT="0" SIGIS="undef" SIGNAME="Instruction_Register_0_Funct">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Instruction_Register_0" PORT="Funct"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="PCWriteCond" SIGIS="undef" SIGNAME="Control_Unit_8_0_PCWriteCond">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="andGateorGate_0" PORT="B"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="PCWrite" SIGIS="undef" SIGNAME="Control_Unit_8_0_PCWrite">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="andGateorGate_0" PORT="C"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="IorD" SIGIS="undef" SIGNAME="Control_Unit_8_0_IorD">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="two2one_mux_8_0" PORT="Selector"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="MemWrite" SIGIS="undef" SIGNAME="Control_Unit_8_0_MemWrite">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="MemWrite"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="IRWrite" SIGIS="undef" SIGNAME="Control_Unit_8_0_IRWrite">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Instruction_Register_0" PORT="IRWrite"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="ALUsrcA" SIGIS="undef" SIGNAME="Control_Unit_8_0_ALUsrcA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="two2one_mux_8_2" PORT="Selector"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="RegWrite" SIGIS="undef" SIGNAME="Control_Unit_8_0_RegWrite">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="register_file_8_0" PORT="RegWrite"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="SLLControl" SIGIS="undef"/>
+        <PORT DIR="O" NAME="ALUWrite" SIGIS="undef" SIGNAME="Control_Unit_8_0_ALUWrite">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ALUOut_8_0" PORT="EN"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="SL32EN" SIGIS="undef" SIGNAME="Control_Unit_8_0_SL32EN">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Shift_Left_2_8_0" PORT="EN"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="SL28EN" SIGIS="undef" SIGNAME="Control_Unit_8_0_SL28EN">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Shift_Left_2_28_8_0" PORT="EN"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="AWrite" SIGIS="undef" SIGNAME="Control_Unit_8_0_AWrite">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Reg_A_8_0" PORT="EN"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="BWrite" SIGIS="undef" SIGNAME="Control_Unit_8_0_BWrite">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Reg_B_8_0" PORT="EN"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="MemtoReg" RIGHT="0" SIGIS="undef" SIGNAME="Control_Unit_8_0_MemtoReg">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="loading_mux_0" PORT="Selector"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="PCSource" RIGHT="0" SIGIS="undef" SIGNAME="Control_Unit_8_0_PCSource">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="four2three_mux_8_0" PORT="Selector"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="ALUsrcB" RIGHT="0" SIGIS="undef" SIGNAME="Control_Unit_8_0_ALUsrcB">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="four2two_mux_8_0" PORT="Selector"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="ALUOp" RIGHT="0" SIGIS="undef" SIGNAME="Control_Unit_8_0_ALUOp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ALU_0" PORT="ALUOp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="MemRead" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" NAME="RegDst" SIGIS="undef" SIGNAME="Control_Unit_8_0_RegDst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="fivebit_2to1_mux_8_0" PORT="Selector"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="MDREN" SIGIS="undef" SIGNAME="Control_Unit_8_0_MDREN">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Memory_Data_Register_0" PORT="EN"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="SHAMTEN" SIGIS="undef" SIGNAME="Control_Unit_8_0_SHAMTEN">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="fivebit_2to1_mux_8_1" PORT="Selector"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="ZeroEN" SIGIS="undef" SIGNAME="Control_Unit_8_0_ZeroEN">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Two2one_1bit_mux_0" PORT="Selector"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="CLOEN" SIGIS="undef" SIGNAME="Control_Unit_8_0_CLOEN">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="two2one_mux_8_3" PORT="Selector"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="HIEN" SIGIS="undef" SIGNAME="Control_Unit_8_0_HIEN">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HILO_reg_0" PORT="EN"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="LOEN" SIGIS="undef" SIGNAME="Control_Unit_8_0_LOEN">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HILO_reg_1" PORT="EN"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="MultEN" SIGIS="undef" SIGNAME="Control_Unit_8_0_MultEN">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Multiplier_32_bit_0" PORT="RST"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/HILO_reg_0" HWVERSION="1.0" INSTANCE="HILO_reg_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="HILO_reg" VLNV="xilinx.com:module_ref:HILO_reg:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="datapath_HILO_reg_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="D" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_0_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlslice_0" PORT="Dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="CLK" SIGIS="clk" SIGNAME="External_Ports_CLK_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CLK_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="EN" SIGIS="undef" SIGNAME="Control_Unit_8_0_HIEN">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Control_Unit_8_0" PORT="HIEN"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="RST" SIGIS="rst" SIGNAME="External_Ports_RST_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="RST_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="Q" RIGHT="0" SIGIS="undef" SIGNAME="HILO_reg_0_Q">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="loading_mux_0" PORT="Hi"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/HILO_reg_1" HWVERSION="1.0" INSTANCE="HILO_reg_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="HILO_reg" VLNV="xilinx.com:module_ref:HILO_reg:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="datapath_HILO_reg_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="D" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_1_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlslice_1" PORT="Dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="CLK" SIGIS="clk" SIGNAME="External_Ports_CLK_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CLK_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="EN" SIGIS="undef" SIGNAME="Control_Unit_8_0_LOEN">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Control_Unit_8_0" PORT="LOEN"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="RST" SIGIS="rst" SIGNAME="External_Ports_RST_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="RST_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="Q" RIGHT="0" SIGIS="undef" SIGNAME="HILO_reg_1_Q">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="loading_mux_0" PORT="Lo"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/Instruction_Register_0" HWVERSION="1.0" INSTANCE="Instruction_Register_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Instruction_Register_8" VLNV="xilinx.com:module_ref:Instruction_Register_8:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="datapath_Instruction_Register_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="CLK" SIGIS="clk" SIGNAME="External_Ports_CLK_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CLK_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="RST" SIGIS="rst" SIGNAME="External_Ports_RST_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="RST_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="IRWrite" SIGIS="undef" SIGNAME="Control_Unit_8_0_IRWrite">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Control_Unit_8_0" PORT="IRWrite"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="MemData" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_MemoryDataIn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="MemoryDataIn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="5" NAME="Instr31to26" RIGHT="0" SIGIS="undef" SIGNAME="Instruction_Register_0_Instr31to26">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Control_Unit_8_0" PORT="OpCode"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="4" NAME="Instr25to21" RIGHT="0" SIGIS="undef" SIGNAME="Instruction_Register_0_Instr25to21">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="register_file_8_0" PORT="ReadRegister1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="4" NAME="Instr20to16" RIGHT="0" SIGIS="undef" SIGNAME="Instruction_Register_0_Instr20to16">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="fivebit_2to1_mux_8_0" PORT="A"/>
+            <CONNECTION INSTANCE="register_file_8_0" PORT="ReadRegister2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="Instr15to0" RIGHT="0" SIGIS="undef" SIGNAME="Instruction_Register_0_Instr15to0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Sign_Extend_8_0" PORT="DataInstructionIn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="4" NAME="Instr15to11" RIGHT="0" SIGIS="undef" SIGNAME="Instruction_Register_0_Instr15to11">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="fivebit_2to1_mux_8_0" PORT="B"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="25" NAME="Instr25to0" RIGHT="0" SIGIS="undef" SIGNAME="Instruction_Register_0_Instr25to0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Shift_Left_2_28_8_0" PORT="SignExtOut"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="5" NAME="Funct" RIGHT="0" SIGIS="undef" SIGNAME="Instruction_Register_0_Funct">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Control_Unit_8_0" PORT="Funct"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="4" NAME="Inst10to6" RIGHT="0" SIGIS="undef" SIGNAME="Instruction_Register_0_Inst10to6">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="fivebit_2to1_mux_8_1" PORT="A"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/Memory_Data_Register_0" HWVERSION="1.0" INSTANCE="Memory_Data_Register_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Memory_Data_Register_8" VLNV="xilinx.com:module_ref:Memory_Data_Register_8:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="datapath_Memory_Data_Register_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="CLK" SIGIS="clk" SIGNAME="External_Ports_CLK_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CLK_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="RST" SIGIS="rst" SIGNAME="External_Ports_RST_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="RST_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="EN" SIGIS="undef" SIGNAME="Control_Unit_8_0_MDREN">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Control_Unit_8_0" PORT="MDREN"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="MemData" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_MemoryDataIn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="MemoryDataIn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="MemRegOut" RIGHT="0" SIGIS="undef" SIGNAME="Memory_Data_Register_0_MemRegOut">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="loading_mux_0" PORT="B"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/Multiplier_32_bit_0" HWVERSION="1.0" INSTANCE="Multiplier_32_bit_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Multiplier_32_bit" VLNV="xilinx.com:module_ref:Multiplier_32_bit:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="W64" VALUE="64"/>
+        <PARAMETER NAME="W32" VALUE="32"/>
+        <PARAMETER NAME="Component_Name" VALUE="datapath_Multiplier_32_bit_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="A" RIGHT="0" SIGIS="undef" SIGNAME="Reg_A_8_0_A_Q">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Reg_A_8_0" PORT="A_Q"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="B" RIGHT="0" SIGIS="undef" SIGNAME="Reg_B_8_0_B_Q">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Reg_B_8_0" PORT="B_Q"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="CLK" SIGIS="clk" SIGNAME="External_Ports_CLK_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CLK_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="RST" SIGIS="rst" SIGNAME="Control_Unit_8_0_MultEN">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Control_Unit_8_0" PORT="MultEN"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="63" NAME="R" RIGHT="0" SIGIS="undef" SIGNAME="Multiplier_32_bit_0_R">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlslice_0" PORT="Din"/>
+            <CONNECTION INSTANCE="xlslice_1" PORT="Din"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="DONE" SIGIS="undef" SIGNAME="Multiplier_32_bit_0_DONE">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Control_Unit_8_0" PORT="DONE_FLAG"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/PC_8_0" HWVERSION="1.0" INSTANCE="PC_8_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="PC_8" VLNV="xilinx.com:module_ref:PC_8:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="datapath_PC_8_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="EN" SIGIS="undef" SIGNAME="andGateorGate_0_R">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="andGateorGate_0" PORT="R"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="RST" SIGIS="rst" SIGNAME="External_Ports_RST_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="RST_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="CLK" SIGIS="clk" SIGNAME="External_Ports_CLK_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CLK_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="PC_D" RIGHT="0" SIGIS="undef" SIGNAME="four2three_mux_8_0_R">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="four2three_mux_8_0" PORT="R"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="PC31to28" RIGHT="0" SIGIS="undef" SIGNAME="PC_8_0_PC31to28">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="four2three_mux_8_0" PORT="PC31to28"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="PC_Q" RIGHT="0" SIGIS="undef" SIGNAME="PC_8_0_PC_Q">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="two2one_mux_8_2" PORT="A"/>
+            <CONNECTION INSTANCE="two2one_mux_8_0" PORT="A"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/Reg_A_8_0" HWVERSION="1.0" INSTANCE="Reg_A_8_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Reg_A_8" VLNV="xilinx.com:module_ref:Reg_A_8:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="datapath_Reg_A_8_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="ReadData1" RIGHT="0" SIGIS="undef" SIGNAME="register_file_8_0_ReadData1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="register_file_8_0" PORT="ReadData1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="EN" SIGIS="undef" SIGNAME="Control_Unit_8_0_AWrite">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Control_Unit_8_0" PORT="AWrite"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="RST" SIGIS="rst" SIGNAME="External_Ports_RST_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="RST_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="CLK" SIGIS="clk" SIGNAME="External_Ports_CLK_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CLK_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="A_Q" RIGHT="0" SIGIS="undef" SIGNAME="Reg_A_8_0_A_Q">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="two2one_mux_8_2" PORT="B"/>
+            <CONNECTION INSTANCE="count_leading_ones_0" PORT="CLO_in"/>
+            <CONNECTION INSTANCE="four2three_mux_8_0" PORT="D"/>
+            <CONNECTION INSTANCE="Multiplier_32_bit_0" PORT="A"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="4" NAME="A4to0" RIGHT="0" SIGIS="undef" SIGNAME="Reg_A_8_0_A4to0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="fivebit_2to1_mux_8_1" PORT="B"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/Reg_B_8_0" HWVERSION="1.0" INSTANCE="Reg_B_8_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Reg_B_8" VLNV="xilinx.com:module_ref:Reg_B_8:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="datapath_Reg_B_8_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="ReadData2" RIGHT="0" SIGIS="undef" SIGNAME="register_file_8_0_ReadData2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="register_file_8_0" PORT="ReadData2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="EN" SIGIS="undef" SIGNAME="Control_Unit_8_0_BWrite">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Control_Unit_8_0" PORT="BWrite"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="RST" SIGIS="rst" SIGNAME="External_Ports_RST_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="RST_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="CLK" SIGIS="clk" SIGNAME="External_Ports_CLK_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CLK_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="B_Q" RIGHT="0" SIGIS="undef" SIGNAME="Reg_B_8_0_B_Q">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="four2two_mux_8_0" PORT="A"/>
+            <CONNECTION INSTANCE="External_Ports" PORT="Bout"/>
+            <CONNECTION INSTANCE="Multiplier_32_bit_0" PORT="B"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/Shift_Left_2_28_8_0" HWVERSION="1.0" INSTANCE="Shift_Left_2_28_8_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Shift_Left_2_28_8" VLNV="xilinx.com:module_ref:Shift_Left_2_28_8:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="datapath_Shift_Left_2_28_8_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="EN" SIGIS="undef" SIGNAME="Control_Unit_8_0_SL28EN">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Control_Unit_8_0" PORT="SL28EN"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="25" NAME="SignExtOut" RIGHT="0" SIGIS="undef" SIGNAME="Instruction_Register_0_Instr25to0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Instruction_Register_0" PORT="Instr25to0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="27" NAME="Shift_2_Out" RIGHT="0" SIGIS="undef" SIGNAME="Shift_Left_2_28_8_0_Shift_2_Out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="four2three_mux_8_0" PORT="C"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/Shift_Left_2_8_0" HWVERSION="1.0" INSTANCE="Shift_Left_2_8_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Shift_Left_2_8" VLNV="xilinx.com:module_ref:Shift_Left_2_8:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="datapath_Shift_Left_2_8_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="EN" SIGIS="undef" SIGNAME="Control_Unit_8_0_SL32EN">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Control_Unit_8_0" PORT="SL32EN"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="SignExtOut" RIGHT="0" SIGIS="undef" SIGNAME="Sign_Extend_8_0_DataInstructionOut">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Sign_Extend_8_0" PORT="DataInstructionOut"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="Shift_2_Out" RIGHT="0" SIGIS="undef" SIGNAME="Shift_Left_2_8_0_Shift_2_Out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="four2two_mux_8_0" PORT="D"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/Sign_Extend_8_0" HWVERSION="1.0" INSTANCE="Sign_Extend_8_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Sign_Extend_8" VLNV="xilinx.com:module_ref:Sign_Extend_8:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="datapath_Sign_Extend_8_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="15" NAME="DataInstructionIn" RIGHT="0" SIGIS="undef" SIGNAME="Instruction_Register_0_Instr15to0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Instruction_Register_0" PORT="Instr15to0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="DataInstructionOut" RIGHT="0" SIGIS="undef" SIGNAME="Sign_Extend_8_0_DataInstructionOut">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Shift_Left_2_8_0" PORT="SignExtOut"/>
+            <CONNECTION INSTANCE="four2two_mux_8_0" PORT="C"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/Two2one_1bit_mux_0" HWVERSION="1.0" INSTANCE="Two2one_1bit_mux_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Two2one_1bit_mux" VLNV="xilinx.com:module_ref:Two2one_1bit_mux:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="datapath_Two2one_1bit_mux_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="A" SIGIS="undef" SIGNAME="ALU_0_zero">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ALU_0" PORT="zero"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="B" SIGIS="undef" SIGNAME="ALU_0_zero">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ALU_0" PORT="zero"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Selector" SIGIS="undef" SIGNAME="Control_Unit_8_0_ZeroEN">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Control_Unit_8_0" PORT="ZeroEN"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="R" SIGIS="undef" SIGNAME="Two2one_1bit_mux_0_R">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="andGateorGate_0" PORT="A"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/andGateorGate_0" HWVERSION="1.0" INSTANCE="andGateorGate_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="andGateorGate" VLNV="xilinx.com:module_ref:andGateorGate:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="datapath_andGateorGate_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="A" SIGIS="undef" SIGNAME="Two2one_1bit_mux_0_R">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Two2one_1bit_mux_0" PORT="R"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="B" SIGIS="undef" SIGNAME="Control_Unit_8_0_PCWriteCond">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Control_Unit_8_0" PORT="PCWriteCond"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="C" SIGIS="undef" SIGNAME="Control_Unit_8_0_PCWrite">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Control_Unit_8_0" PORT="PCWrite"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="R" SIGIS="undef" SIGNAME="andGateorGate_0_R">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="PC_8_0" PORT="EN"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/count_leading_ones_0" HWVERSION="1.0" INSTANCE="count_leading_ones_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="count_leading_ones" VLNV="xilinx.com:module_ref:count_leading_ones:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="datapath_count_leading_ones_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="CLO_in" RIGHT="0" SIGIS="undef" SIGNAME="Reg_A_8_0_A_Q">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Reg_A_8_0" PORT="A_Q"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="CLO_out" RIGHT="0" SIGIS="undef" SIGNAME="count_leading_ones_0_CLO_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="two2one_mux_8_3" PORT="B"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/fivebit_2to1_mux_8_0" HWVERSION="1.0" INSTANCE="fivebit_2to1_mux_8_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="fivebit_2to1_mux_8" VLNV="xilinx.com:module_ref:fivebit_2to1_mux_8:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="datapath_fivebit_2to1_mux_8_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="4" NAME="A" RIGHT="0" SIGIS="undef" SIGNAME="Instruction_Register_0_Instr20to16">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Instruction_Register_0" PORT="Instr20to16"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="4" NAME="B" RIGHT="0" SIGIS="undef" SIGNAME="Instruction_Register_0_Instr15to11">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Instruction_Register_0" PORT="Instr15to11"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Selector" SIGIS="undef" SIGNAME="Control_Unit_8_0_RegDst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Control_Unit_8_0" PORT="RegDst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="4" NAME="R" RIGHT="0" SIGIS="undef" SIGNAME="fivebit_2to1_mux_8_0_R">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="register_file_8_0" PORT="WriteRegister"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/fivebit_2to1_mux_8_1" HWVERSION="1.0" INSTANCE="fivebit_2to1_mux_8_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="fivebit_2to1_mux_8" VLNV="xilinx.com:module_ref:fivebit_2to1_mux_8:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="datapath_fivebit_2to1_mux_8_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="4" NAME="A" RIGHT="0" SIGIS="undef" SIGNAME="Instruction_Register_0_Inst10to6">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Instruction_Register_0" PORT="Inst10to6"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="4" NAME="B" RIGHT="0" SIGIS="undef" SIGNAME="Reg_A_8_0_A4to0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Reg_A_8_0" PORT="A4to0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Selector" SIGIS="undef" SIGNAME="Control_Unit_8_0_SHAMTEN">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Control_Unit_8_0" PORT="SHAMTEN"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="4" NAME="R" RIGHT="0" SIGIS="undef" SIGNAME="fivebit_2to1_mux_8_1_R">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ALU_0" PORT="SHAMT"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/four2three_mux_8_0" HWVERSION="1.0" INSTANCE="four2three_mux_8_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="four2three_mux_8" VLNV="xilinx.com:module_ref:four2three_mux_8:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="datapath_four2three_mux_8_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="A" RIGHT="0" SIGIS="undef" SIGNAME="two2one_mux_8_3_R">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="two2one_mux_8_3" PORT="R"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="B" RIGHT="0" SIGIS="undef" SIGNAME="ALUOut_8_0_ALUOut">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ALUOut_8_0" PORT="ALUOut"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="D" RIGHT="0" SIGIS="undef" SIGNAME="Reg_A_8_0_A_Q">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Reg_A_8_0" PORT="A_Q"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="27" NAME="C" RIGHT="0" SIGIS="undef" SIGNAME="Shift_Left_2_28_8_0_Shift_2_Out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Shift_Left_2_28_8_0" PORT="Shift_2_Out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="PC31to28" RIGHT="0" SIGIS="undef" SIGNAME="PC_8_0_PC31to28">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="PC_8_0" PORT="PC31to28"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="Selector" RIGHT="0" SIGIS="undef" SIGNAME="Control_Unit_8_0_PCSource">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Control_Unit_8_0" PORT="PCSource"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="R" RIGHT="0" SIGIS="undef" SIGNAME="four2three_mux_8_0_R">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="PC_8_0" PORT="PC_D"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/four2two_mux_8_0" HWVERSION="1.0" INSTANCE="four2two_mux_8_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="four2two_mux_8" VLNV="xilinx.com:module_ref:four2two_mux_8:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="datapath_four2two_mux_8_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="A" RIGHT="0" SIGIS="undef" SIGNAME="Reg_B_8_0_B_Q">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Reg_B_8_0" PORT="B_Q"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="C" RIGHT="0" SIGIS="undef" SIGNAME="Sign_Extend_8_0_DataInstructionOut">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Sign_Extend_8_0" PORT="DataInstructionOut"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="D" RIGHT="0" SIGIS="undef" SIGNAME="Shift_Left_2_8_0_Shift_2_Out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Shift_Left_2_8_0" PORT="Shift_2_Out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="Selector" RIGHT="0" SIGIS="undef" SIGNAME="Control_Unit_8_0_ALUsrcB">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Control_Unit_8_0" PORT="ALUsrcB"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="R" RIGHT="0" SIGIS="undef" SIGNAME="four2two_mux_8_0_R">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ALU_0" PORT="B"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/loading_mux_0" HWVERSION="1.0" INSTANCE="loading_mux_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="loading_mux" VLNV="xilinx.com:module_ref:loading_mux:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="datapath_loading_mux_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="A" RIGHT="0" SIGIS="undef" SIGNAME="ALUOut_8_0_ALUOut">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ALUOut_8_0" PORT="ALUOut"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="B" RIGHT="0" SIGIS="undef" SIGNAME="Memory_Data_Register_0_MemRegOut">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Memory_Data_Register_0" PORT="MemRegOut"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="Hi" RIGHT="0" SIGIS="undef" SIGNAME="HILO_reg_0_Q">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HILO_reg_0" PORT="Q"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="Lo" RIGHT="0" SIGIS="undef" SIGNAME="HILO_reg_1_Q">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HILO_reg_1" PORT="Q"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="Selector" RIGHT="0" SIGIS="undef" SIGNAME="Control_Unit_8_0_MemtoReg">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Control_Unit_8_0" PORT="MemtoReg"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="R" RIGHT="0" SIGIS="undef" SIGNAME="loading_mux_0_R">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="register_file_8_0" PORT="WriteData"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/register_file_8_0" HWVERSION="1.0" INSTANCE="register_file_8_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="register_file_8" VLNV="xilinx.com:module_ref:register_file_8:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="datapath_register_file_8_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="CLK" SIGIS="clk" SIGNAME="External_Ports_CLK_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CLK_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="RST" SIGIS="rst" SIGNAME="External_Ports_RST_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="RST_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="RegWrite" SIGIS="undef" SIGNAME="Control_Unit_8_0_RegWrite">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Control_Unit_8_0" PORT="RegWrite"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="4" NAME="ReadRegister1" RIGHT="0" SIGIS="undef" SIGNAME="Instruction_Register_0_Instr25to21">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Instruction_Register_0" PORT="Instr25to21"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="4" NAME="ReadRegister2" RIGHT="0" SIGIS="undef" SIGNAME="Instruction_Register_0_Instr20to16">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Instruction_Register_0" PORT="Instr20to16"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="4" NAME="WriteRegister" RIGHT="0" SIGIS="undef" SIGNAME="fivebit_2to1_mux_8_0_R">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="fivebit_2to1_mux_8_0" PORT="R"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="WriteData" RIGHT="0" SIGIS="undef" SIGNAME="loading_mux_0_R">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="loading_mux_0" PORT="R"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="ReadData1" RIGHT="0" SIGIS="undef" SIGNAME="register_file_8_0_ReadData1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Reg_A_8_0" PORT="ReadData1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="ReadData2" RIGHT="0" SIGIS="undef" SIGNAME="register_file_8_0_ReadData2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Reg_B_8_0" PORT="ReadData2"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/two2one_mux_8_0" HWVERSION="1.0" INSTANCE="two2one_mux_8_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="two2one_mux_8" VLNV="xilinx.com:module_ref:two2one_mux_8:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="datapath_two2one_mux_8_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="A" RIGHT="0" SIGIS="undef" SIGNAME="PC_8_0_PC_Q">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="PC_8_0" PORT="PC_Q"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="B" RIGHT="0" SIGIS="undef" SIGNAME="ALUOut_8_0_ALUOut">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ALUOut_8_0" PORT="ALUOut"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Selector" SIGIS="undef" SIGNAME="Control_Unit_8_0_IorD">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Control_Unit_8_0" PORT="IorD"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="R" RIGHT="0" SIGIS="undef" SIGNAME="two2one_mux_8_0_R">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="MemoryAddress"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/two2one_mux_8_2" HWVERSION="1.0" INSTANCE="two2one_mux_8_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="two2one_mux_8" VLNV="xilinx.com:module_ref:two2one_mux_8:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="datapath_two2one_mux_8_2_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="A" RIGHT="0" SIGIS="undef" SIGNAME="PC_8_0_PC_Q">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="PC_8_0" PORT="PC_Q"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="B" RIGHT="0" SIGIS="undef" SIGNAME="Reg_A_8_0_A_Q">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Reg_A_8_0" PORT="A_Q"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Selector" SIGIS="undef" SIGNAME="Control_Unit_8_0_ALUsrcA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Control_Unit_8_0" PORT="ALUsrcA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="R" RIGHT="0" SIGIS="undef" SIGNAME="two2one_mux_8_2_R">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ALU_0" PORT="A"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/two2one_mux_8_3" HWVERSION="1.0" INSTANCE="two2one_mux_8_3" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="two2one_mux_8" VLNV="xilinx.com:module_ref:two2one_mux_8:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="datapath_two2one_mux_8_3_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="A" RIGHT="0" SIGIS="undef" SIGNAME="ALU_0_R">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ALU_0" PORT="R"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="B" RIGHT="0" SIGIS="undef" SIGNAME="count_leading_ones_0_CLO_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="count_leading_ones_0" PORT="CLO_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Selector" SIGIS="undef" SIGNAME="Control_Unit_8_0_CLOEN">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Control_Unit_8_0" PORT="CLOEN"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="R" RIGHT="0" SIGIS="undef" SIGNAME="two2one_mux_8_3_R">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="four2three_mux_8_0" PORT="A"/>
+            <CONNECTION INSTANCE="ALUOut_8_0" PORT="ALUResult"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/xlslice_0" HWVERSION="1.0" INSTANCE="xlslice_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlslice" VLNV="xilinx.com:ip:xlslice:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DIN_WIDTH" VALUE="64"/>
+        <PARAMETER NAME="DIN_FROM" VALUE="63"/>
+        <PARAMETER NAME="DIN_TO" VALUE="32"/>
+        <PARAMETER NAME="Component_Name" VALUE="datapath_xlslice_0_0"/>
+        <PARAMETER NAME="DOUT_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="63" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="Multiplier_32_bit_0_R">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Multiplier_32_bit_0" PORT="R"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_0_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HILO_reg_0" PORT="D"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/xlslice_1" HWVERSION="1.0" INSTANCE="xlslice_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlslice" VLNV="xilinx.com:ip:xlslice:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DIN_WIDTH" VALUE="64"/>
+        <PARAMETER NAME="DIN_FROM" VALUE="31"/>
+        <PARAMETER NAME="DIN_TO" VALUE="0"/>
+        <PARAMETER NAME="Component_Name" VALUE="datapath_xlslice_1_0"/>
+        <PARAMETER NAME="DOUT_WIDTH" VALUE="32"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="63" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="Multiplier_32_bit_0_R">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Multiplier_32_bit_0" PORT="R"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_1_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HILO_reg_1" PORT="D"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

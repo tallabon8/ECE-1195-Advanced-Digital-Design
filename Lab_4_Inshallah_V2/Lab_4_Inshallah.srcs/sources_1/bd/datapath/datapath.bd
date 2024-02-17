@@ -1,0 +1,1494 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xC4864F62AAE99FCB",
+      "device": "xc7z020clg400-1",
+      "name": "datapath",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2018.3"
+    },
+    "design_tree": {
+      "Shift_Left_2_8_0": "",
+      "Shift_Left_2_28_8_0": "",
+      "andGateorGate_0": "",
+      "Sign_Extend_8_0": "",
+      "two2one_mux_8_2": "",
+      "four2two_mux_8_0": "",
+      "four2three_mux_8_0": "",
+      "fivebit_2to1_mux_8_0": "",
+      "Reg_B_8_0": "",
+      "PC_8_0": "",
+      "ALUOut_8_0": "",
+      "Reg_A_8_0": "",
+      "Instruction_Register_0": "",
+      "fivebit_2to1_mux_8_1": "",
+      "Two2one_1bit_mux_0": "",
+      "count_leading_ones_0": "",
+      "two2one_mux_8_3": "",
+      "Memory_Data_Register_0": "",
+      "two2one_mux_8_0": "",
+      "register_file_8_0": "",
+      "xlslice_0": "",
+      "xlslice_1": "",
+      "loading_mux_0": "",
+      "HILO_reg_0": "",
+      "HILO_reg_1": "",
+      "ALU_0": "",
+      "Multiplier_32_bit_0": "",
+      "Control_Unit_8_0": ""
+    },
+    "ports": {
+      "CLK_0": {
+        "type": "clk",
+        "direction": "I"
+      },
+      "RST_0": {
+        "type": "rst",
+        "direction": "I"
+      },
+      "MemWrite": {
+        "direction": "O"
+      },
+      "MemoryAddress": {
+        "direction": "O",
+        "left": "31",
+        "right": "0"
+      },
+      "Bout": {
+        "direction": "O",
+        "left": "31",
+        "right": "0"
+      },
+      "MemoryDataIn": {
+        "direction": "I",
+        "left": "31",
+        "right": "0"
+      }
+    },
+    "components": {
+      "Shift_Left_2_8_0": {
+        "vlnv": "xilinx.com:module_ref:Shift_Left_2_8:1.0",
+        "xci_name": "datapath_Shift_Left_2_8_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Shift_Left_2_8",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "EN": {
+            "direction": "I"
+          },
+          "SignExtOut": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "Shift_2_Out": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "Shift_Left_2_28_8_0": {
+        "vlnv": "xilinx.com:module_ref:Shift_Left_2_28_8:1.0",
+        "xci_name": "datapath_Shift_Left_2_28_8_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Shift_Left_2_28_8",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "EN": {
+            "direction": "I"
+          },
+          "SignExtOut": {
+            "direction": "I",
+            "left": "25",
+            "right": "0"
+          },
+          "Shift_2_Out": {
+            "direction": "O",
+            "left": "27",
+            "right": "0"
+          }
+        }
+      },
+      "andGateorGate_0": {
+        "vlnv": "xilinx.com:module_ref:andGateorGate:1.0",
+        "xci_name": "datapath_andGateorGate_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "andGateorGate",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "A": {
+            "direction": "I"
+          },
+          "B": {
+            "direction": "I"
+          },
+          "C": {
+            "direction": "I"
+          },
+          "R": {
+            "direction": "O"
+          }
+        }
+      },
+      "Sign_Extend_8_0": {
+        "vlnv": "xilinx.com:module_ref:Sign_Extend_8:1.0",
+        "xci_name": "datapath_Sign_Extend_8_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Sign_Extend_8",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "DataInstructionIn": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "DataInstructionOut": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "two2one_mux_8_2": {
+        "vlnv": "xilinx.com:module_ref:two2one_mux_8:1.0",
+        "xci_name": "datapath_two2one_mux_8_2_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "two2one_mux_8",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "A": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "B": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "Selector": {
+            "direction": "I"
+          },
+          "R": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "four2two_mux_8_0": {
+        "vlnv": "xilinx.com:module_ref:four2two_mux_8:1.0",
+        "xci_name": "datapath_four2two_mux_8_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "four2two_mux_8",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "A": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "C": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "D": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "Selector": {
+            "direction": "I",
+            "left": "1",
+            "right": "0"
+          },
+          "R": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "four2three_mux_8_0": {
+        "vlnv": "xilinx.com:module_ref:four2three_mux_8:1.0",
+        "xci_name": "datapath_four2three_mux_8_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "four2three_mux_8",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "A": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "B": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "D": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "C": {
+            "direction": "I",
+            "left": "27",
+            "right": "0"
+          },
+          "PC31to28": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "Selector": {
+            "direction": "I",
+            "left": "1",
+            "right": "0"
+          },
+          "R": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "fivebit_2to1_mux_8_0": {
+        "vlnv": "xilinx.com:module_ref:fivebit_2to1_mux_8:1.0",
+        "xci_name": "datapath_fivebit_2to1_mux_8_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "fivebit_2to1_mux_8",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "A": {
+            "direction": "I",
+            "left": "4",
+            "right": "0"
+          },
+          "B": {
+            "direction": "I",
+            "left": "4",
+            "right": "0"
+          },
+          "Selector": {
+            "direction": "I"
+          },
+          "R": {
+            "direction": "O",
+            "left": "4",
+            "right": "0"
+          }
+        }
+      },
+      "Reg_B_8_0": {
+        "vlnv": "xilinx.com:module_ref:Reg_B_8:1.0",
+        "xci_name": "datapath_Reg_B_8_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Reg_B_8",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "RST": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "CLK": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "ReadData2": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "EN": {
+            "direction": "I"
+          },
+          "B_Q": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "PC_8_0": {
+        "vlnv": "xilinx.com:module_ref:PC_8:1.0",
+        "xci_name": "datapath_PC_8_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "PC_8",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "RST": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "CLK": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "EN": {
+            "direction": "I"
+          },
+          "PC_D": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "PC31to28": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "PC_Q": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "ALUOut_8_0": {
+        "vlnv": "xilinx.com:module_ref:ALUOut_8:1.0",
+        "xci_name": "datapath_ALUOut_8_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "ALUOut_8",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "CLK": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "RST": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "EN": {
+            "direction": "I"
+          },
+          "ALUResult": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "ALUOut": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "Reg_A_8_0": {
+        "vlnv": "xilinx.com:module_ref:Reg_A_8:1.0",
+        "xci_name": "datapath_Reg_A_8_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Reg_A_8",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "RST": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "CLK": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "ReadData1": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "EN": {
+            "direction": "I"
+          },
+          "A_Q": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "A4to0": {
+            "direction": "O",
+            "left": "4",
+            "right": "0"
+          }
+        }
+      },
+      "Instruction_Register_0": {
+        "vlnv": "xilinx.com:module_ref:Instruction_Register_8:1.0",
+        "xci_name": "datapath_Instruction_Register_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Instruction_Register_8",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "CLK": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "RST": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "IRWrite": {
+            "direction": "I"
+          },
+          "MemData": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "Instr31to26": {
+            "direction": "O",
+            "left": "5",
+            "right": "0"
+          },
+          "Instr25to21": {
+            "direction": "O",
+            "left": "4",
+            "right": "0"
+          },
+          "Instr20to16": {
+            "direction": "O",
+            "left": "4",
+            "right": "0"
+          },
+          "Instr15to0": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "Instr15to11": {
+            "direction": "O",
+            "left": "4",
+            "right": "0"
+          },
+          "Instr25to0": {
+            "direction": "O",
+            "left": "25",
+            "right": "0"
+          },
+          "Funct": {
+            "direction": "O",
+            "left": "5",
+            "right": "0"
+          },
+          "Inst10to6": {
+            "direction": "O",
+            "left": "4",
+            "right": "0"
+          }
+        }
+      },
+      "fivebit_2to1_mux_8_1": {
+        "vlnv": "xilinx.com:module_ref:fivebit_2to1_mux_8:1.0",
+        "xci_name": "datapath_fivebit_2to1_mux_8_1_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "fivebit_2to1_mux_8",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "A": {
+            "direction": "I",
+            "left": "4",
+            "right": "0"
+          },
+          "B": {
+            "direction": "I",
+            "left": "4",
+            "right": "0"
+          },
+          "Selector": {
+            "direction": "I"
+          },
+          "R": {
+            "direction": "O",
+            "left": "4",
+            "right": "0"
+          }
+        }
+      },
+      "Two2one_1bit_mux_0": {
+        "vlnv": "xilinx.com:module_ref:Two2one_1bit_mux:1.0",
+        "xci_name": "datapath_Two2one_1bit_mux_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Two2one_1bit_mux",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "A": {
+            "direction": "I"
+          },
+          "B": {
+            "direction": "I"
+          },
+          "Selector": {
+            "direction": "I"
+          },
+          "R": {
+            "direction": "O"
+          }
+        }
+      },
+      "count_leading_ones_0": {
+        "vlnv": "xilinx.com:module_ref:count_leading_ones:1.0",
+        "xci_name": "datapath_count_leading_ones_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "count_leading_ones",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "CLO_in": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "CLO_out": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "two2one_mux_8_3": {
+        "vlnv": "xilinx.com:module_ref:two2one_mux_8:1.0",
+        "xci_name": "datapath_two2one_mux_8_3_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "two2one_mux_8",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "A": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "B": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "Selector": {
+            "direction": "I"
+          },
+          "R": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "Memory_Data_Register_0": {
+        "vlnv": "xilinx.com:module_ref:Memory_Data_Register_8:1.0",
+        "xci_name": "datapath_Memory_Data_Register_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Memory_Data_Register_8",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "CLK": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "RST": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "EN": {
+            "direction": "I"
+          },
+          "MemData": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "MemRegOut": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "two2one_mux_8_0": {
+        "vlnv": "xilinx.com:module_ref:two2one_mux_8:1.0",
+        "xci_name": "datapath_two2one_mux_8_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "two2one_mux_8",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "A": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "B": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "Selector": {
+            "direction": "I"
+          },
+          "R": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "register_file_8_0": {
+        "vlnv": "xilinx.com:module_ref:register_file_8:1.0",
+        "xci_name": "datapath_register_file_8_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "register_file_8",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "CLK": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "RST": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "RegWrite": {
+            "direction": "I"
+          },
+          "ReadRegister1": {
+            "direction": "I",
+            "left": "4",
+            "right": "0"
+          },
+          "ReadRegister2": {
+            "direction": "I",
+            "left": "4",
+            "right": "0"
+          },
+          "WriteRegister": {
+            "direction": "I",
+            "left": "4",
+            "right": "0"
+          },
+          "WriteData": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "ReadData1": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "ReadData2": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "xlslice_0": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "datapath_xlslice_0_0",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "63"
+          },
+          "DIN_TO": {
+            "value": "32"
+          },
+          "DIN_WIDTH": {
+            "value": "64"
+          },
+          "DOUT_WIDTH": {
+            "value": "1"
+          }
+        }
+      },
+      "xlslice_1": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "datapath_xlslice_1_0",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "31"
+          },
+          "DIN_TO": {
+            "value": "0"
+          },
+          "DIN_WIDTH": {
+            "value": "64"
+          },
+          "DOUT_WIDTH": {
+            "value": "32"
+          }
+        }
+      },
+      "loading_mux_0": {
+        "vlnv": "xilinx.com:module_ref:loading_mux:1.0",
+        "xci_name": "datapath_loading_mux_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "loading_mux",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "A": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "B": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "Hi": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "Lo": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "Selector": {
+            "direction": "I",
+            "left": "2",
+            "right": "0"
+          },
+          "R": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "HILO_reg_0": {
+        "vlnv": "xilinx.com:module_ref:HILO_reg:1.0",
+        "xci_name": "datapath_HILO_reg_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "HILO_reg",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "CLK": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "RST": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "D": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "EN": {
+            "direction": "I"
+          },
+          "Q": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "HILO_reg_1": {
+        "vlnv": "xilinx.com:module_ref:HILO_reg:1.0",
+        "xci_name": "datapath_HILO_reg_1_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "HILO_reg",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "CLK": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "RST": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "D": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "EN": {
+            "direction": "I"
+          },
+          "Q": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "ALU_0": {
+        "vlnv": "xilinx.com:module_ref:ALU:1.0",
+        "xci_name": "datapath_ALU_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "ALU",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "A": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "B": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "SHAMT": {
+            "direction": "I",
+            "left": "4",
+            "right": "0"
+          },
+          "ALUOp": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "R": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "zero": {
+            "direction": "O"
+          },
+          "overflow": {
+            "direction": "O"
+          }
+        }
+      },
+      "Multiplier_32_bit_0": {
+        "vlnv": "xilinx.com:module_ref:Multiplier_32_bit:1.0",
+        "xci_name": "datapath_Multiplier_32_bit_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Multiplier_32_bit",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "CLK": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "RST": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "A": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "B": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "R": {
+            "direction": "O",
+            "left": "63",
+            "right": "0"
+          },
+          "DONE": {
+            "direction": "O"
+          }
+        }
+      },
+      "Control_Unit_8_0": {
+        "vlnv": "xilinx.com:module_ref:Control_Unit_8:1.0",
+        "xci_name": "datapath_Control_Unit_8_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Control_Unit_8",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "CLK": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "RST": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "DONE_FLAG": {
+            "direction": "I"
+          },
+          "OpCode": {
+            "direction": "I",
+            "left": "5",
+            "right": "0"
+          },
+          "Funct": {
+            "direction": "I",
+            "left": "5",
+            "right": "0"
+          },
+          "PCWriteCond": {
+            "direction": "O"
+          },
+          "PCWrite": {
+            "direction": "O"
+          },
+          "IorD": {
+            "direction": "O"
+          },
+          "MemWrite": {
+            "direction": "O"
+          },
+          "IRWrite": {
+            "direction": "O"
+          },
+          "ALUsrcA": {
+            "direction": "O"
+          },
+          "RegWrite": {
+            "direction": "O"
+          },
+          "SLLControl": {
+            "direction": "O"
+          },
+          "ALUWrite": {
+            "direction": "O"
+          },
+          "SL32EN": {
+            "direction": "O"
+          },
+          "SL28EN": {
+            "direction": "O"
+          },
+          "AWrite": {
+            "direction": "O"
+          },
+          "BWrite": {
+            "direction": "O"
+          },
+          "MemtoReg": {
+            "direction": "O",
+            "left": "2",
+            "right": "0"
+          },
+          "PCSource": {
+            "direction": "O",
+            "left": "1",
+            "right": "0"
+          },
+          "ALUsrcB": {
+            "direction": "O",
+            "left": "1",
+            "right": "0"
+          },
+          "ALUOp": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "MemRead": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "RegDst": {
+            "direction": "O"
+          },
+          "MDREN": {
+            "direction": "O"
+          },
+          "SHAMTEN": {
+            "direction": "O"
+          },
+          "ZeroEN": {
+            "direction": "O"
+          },
+          "CLOEN": {
+            "direction": "O"
+          },
+          "HIEN": {
+            "direction": "O"
+          },
+          "LOEN": {
+            "direction": "O"
+          },
+          "MultEN": {
+            "direction": "O"
+          }
+        }
+      }
+    },
+    "nets": {
+      "Control_Unit_8_0_PCWrite": {
+        "ports": [
+          "Control_Unit_8_0/PCWrite",
+          "andGateorGate_0/C"
+        ]
+      },
+      "Control_Unit_8_0_PCWriteCond": {
+        "ports": [
+          "Control_Unit_8_0/PCWriteCond",
+          "andGateorGate_0/B"
+        ]
+      },
+      "andGateorGate_0_R": {
+        "ports": [
+          "andGateorGate_0/R",
+          "PC_8_0/EN"
+        ]
+      },
+      "four2three_mux_8_0_R": {
+        "ports": [
+          "four2three_mux_8_0/R",
+          "PC_8_0/PC_D"
+        ]
+      },
+      "Control_Unit_8_0_IorD": {
+        "ports": [
+          "Control_Unit_8_0/IorD",
+          "two2one_mux_8_0/Selector"
+        ]
+      },
+      "PC_8_0_PC_Q": {
+        "ports": [
+          "PC_8_0/PC_Q",
+          "two2one_mux_8_2/A",
+          "two2one_mux_8_0/A"
+        ]
+      },
+      "Control_Unit_8_0_IRWrite": {
+        "ports": [
+          "Control_Unit_8_0/IRWrite",
+          "Instruction_Register_0/IRWrite"
+        ]
+      },
+      "Control_Unit_8_0_MDREN": {
+        "ports": [
+          "Control_Unit_8_0/MDREN",
+          "Memory_Data_Register_0/EN"
+        ]
+      },
+      "fivebit_2to1_mux_8_0_R": {
+        "ports": [
+          "fivebit_2to1_mux_8_0/R",
+          "register_file_8_0/WriteRegister"
+        ]
+      },
+      "Instruction_Register_0_Instr20to16": {
+        "ports": [
+          "Instruction_Register_0/Instr20to16",
+          "fivebit_2to1_mux_8_0/A",
+          "register_file_8_0/ReadRegister2"
+        ]
+      },
+      "Instruction_Register_0_Instr15to11": {
+        "ports": [
+          "Instruction_Register_0/Instr15to11",
+          "fivebit_2to1_mux_8_0/B"
+        ]
+      },
+      "Control_Unit_8_0_RegDst": {
+        "ports": [
+          "Control_Unit_8_0/RegDst",
+          "fivebit_2to1_mux_8_0/Selector"
+        ]
+      },
+      "Instruction_Register_0_Instr31to26": {
+        "ports": [
+          "Instruction_Register_0/Instr31to26",
+          "Control_Unit_8_0/OpCode"
+        ]
+      },
+      "Control_Unit_8_0_RegWrite": {
+        "ports": [
+          "Control_Unit_8_0/RegWrite",
+          "register_file_8_0/RegWrite"
+        ]
+      },
+      "Instruction_Register_0_Instr25to21": {
+        "ports": [
+          "Instruction_Register_0/Instr25to21",
+          "register_file_8_0/ReadRegister1"
+        ]
+      },
+      "Instruction_Register_0_Instr15to0": {
+        "ports": [
+          "Instruction_Register_0/Instr15to0",
+          "Sign_Extend_8_0/DataInstructionIn"
+        ]
+      },
+      "Sign_Extend_8_0_DataInstructionOut": {
+        "ports": [
+          "Sign_Extend_8_0/DataInstructionOut",
+          "Shift_Left_2_8_0/SignExtOut",
+          "four2two_mux_8_0/C"
+        ]
+      },
+      "register_file_8_0_ReadData1": {
+        "ports": [
+          "register_file_8_0/ReadData1",
+          "Reg_A_8_0/ReadData1"
+        ]
+      },
+      "register_file_8_0_ReadData2": {
+        "ports": [
+          "register_file_8_0/ReadData2",
+          "Reg_B_8_0/ReadData2"
+        ]
+      },
+      "Control_Unit_8_0_AWrite": {
+        "ports": [
+          "Control_Unit_8_0/AWrite",
+          "Reg_A_8_0/EN"
+        ]
+      },
+      "Control_Unit_8_0_BWrite": {
+        "ports": [
+          "Control_Unit_8_0/BWrite",
+          "Reg_B_8_0/EN"
+        ]
+      },
+      "Reg_A_8_0_A_Q": {
+        "ports": [
+          "Reg_A_8_0/A_Q",
+          "two2one_mux_8_2/B",
+          "count_leading_ones_0/CLO_in",
+          "four2three_mux_8_0/D",
+          "Multiplier_32_bit_0/A"
+        ]
+      },
+      "Control_Unit_8_0_ALUsrcA": {
+        "ports": [
+          "Control_Unit_8_0/ALUsrcA",
+          "two2one_mux_8_2/Selector"
+        ]
+      },
+      "Reg_B_8_0_B_Q": {
+        "ports": [
+          "Reg_B_8_0/B_Q",
+          "four2two_mux_8_0/A",
+          "Bout",
+          "Multiplier_32_bit_0/B"
+        ]
+      },
+      "Shift_Left_2_8_0_Shift_2_Out": {
+        "ports": [
+          "Shift_Left_2_8_0/Shift_2_Out",
+          "four2two_mux_8_0/D"
+        ]
+      },
+      "Control_Unit_8_0_ALUsrcB": {
+        "ports": [
+          "Control_Unit_8_0/ALUsrcB",
+          "four2two_mux_8_0/Selector"
+        ]
+      },
+      "two2one_mux_8_2_R": {
+        "ports": [
+          "two2one_mux_8_2/R",
+          "ALU_0/A"
+        ]
+      },
+      "four2two_mux_8_0_R": {
+        "ports": [
+          "four2two_mux_8_0/R",
+          "ALU_0/B"
+        ]
+      },
+      "ALU_0_R": {
+        "ports": [
+          "two2one_mux_8_3/R",
+          "four2three_mux_8_0/A",
+          "ALUOut_8_0/ALUResult"
+        ]
+      },
+      "Instruction_Register_0_Instr25to0": {
+        "ports": [
+          "Instruction_Register_0/Instr25to0",
+          "Shift_Left_2_28_8_0/SignExtOut"
+        ]
+      },
+      "Control_Unit_8_0_SL28EN": {
+        "ports": [
+          "Control_Unit_8_0/SL28EN",
+          "Shift_Left_2_28_8_0/EN"
+        ]
+      },
+      "Control_Unit_8_0_SL32EN": {
+        "ports": [
+          "Control_Unit_8_0/SL32EN",
+          "Shift_Left_2_8_0/EN"
+        ]
+      },
+      "Control_Unit_8_0_ALUWrite": {
+        "ports": [
+          "Control_Unit_8_0/ALUWrite",
+          "ALUOut_8_0/EN"
+        ]
+      },
+      "Shift_Left_2_28_8_0_Shift_2_Out": {
+        "ports": [
+          "Shift_Left_2_28_8_0/Shift_2_Out",
+          "four2three_mux_8_0/C"
+        ]
+      },
+      "PC_8_0_PC31to28": {
+        "ports": [
+          "PC_8_0/PC31to28",
+          "four2three_mux_8_0/PC31to28"
+        ]
+      },
+      "Control_Unit_8_0_PCSource": {
+        "ports": [
+          "Control_Unit_8_0/PCSource",
+          "four2three_mux_8_0/Selector"
+        ]
+      },
+      "Control_Unit_8_0_ALUOp": {
+        "ports": [
+          "Control_Unit_8_0/ALUOp",
+          "ALU_0/ALUOp"
+        ]
+      },
+      "Instruction_Register_0_Funct": {
+        "ports": [
+          "Instruction_Register_0/Funct",
+          "Control_Unit_8_0/Funct"
+        ]
+      },
+      "two2one_mux_8_0_R": {
+        "ports": [
+          "two2one_mux_8_0/R",
+          "MemoryAddress"
+        ]
+      },
+      "Control_Unit_8_0_MemWrite": {
+        "ports": [
+          "Control_Unit_8_0/MemWrite",
+          "MemWrite"
+        ]
+      },
+      "CLK_0_1": {
+        "ports": [
+          "CLK_0",
+          "Reg_B_8_0/CLK",
+          "PC_8_0/CLK",
+          "ALUOut_8_0/CLK",
+          "Reg_A_8_0/CLK",
+          "Instruction_Register_0/CLK",
+          "Memory_Data_Register_0/CLK",
+          "register_file_8_0/CLK",
+          "HILO_reg_0/CLK",
+          "HILO_reg_1/CLK",
+          "Multiplier_32_bit_0/CLK",
+          "Control_Unit_8_0/CLK"
+        ]
+      },
+      "RST_0_1": {
+        "ports": [
+          "RST_0",
+          "Reg_B_8_0/RST",
+          "PC_8_0/RST",
+          "ALUOut_8_0/RST",
+          "Reg_A_8_0/RST",
+          "Instruction_Register_0/RST",
+          "Memory_Data_Register_0/RST",
+          "register_file_8_0/RST",
+          "HILO_reg_0/RST",
+          "HILO_reg_1/RST",
+          "Control_Unit_8_0/RST"
+        ]
+      },
+      "Reg_A_8_0_A4to0": {
+        "ports": [
+          "Reg_A_8_0/A4to0",
+          "fivebit_2to1_mux_8_1/B"
+        ]
+      },
+      "Instruction_Register_0_Inst10to6": {
+        "ports": [
+          "Instruction_Register_0/Inst10to6",
+          "fivebit_2to1_mux_8_1/A"
+        ]
+      },
+      "Control_Unit_8_0_SHAMTEN": {
+        "ports": [
+          "Control_Unit_8_0/SHAMTEN",
+          "fivebit_2to1_mux_8_1/Selector"
+        ]
+      },
+      "fivebit_2to1_mux_8_1_R": {
+        "ports": [
+          "fivebit_2to1_mux_8_1/R",
+          "ALU_0/SHAMT"
+        ]
+      },
+      "Control_Unit_8_0_ZeroEN": {
+        "ports": [
+          "Control_Unit_8_0/ZeroEN",
+          "Two2one_1bit_mux_0/Selector"
+        ]
+      },
+      "ALU_0_zero": {
+        "ports": [
+          "ALU_0/zero",
+          "Two2one_1bit_mux_0/B",
+          "Two2one_1bit_mux_0/A"
+        ]
+      },
+      "Two2one_1bit_mux_0_R": {
+        "ports": [
+          "Two2one_1bit_mux_0/R",
+          "andGateorGate_0/A"
+        ]
+      },
+      "Control_Unit_8_0_CLOEN": {
+        "ports": [
+          "Control_Unit_8_0/CLOEN",
+          "two2one_mux_8_3/Selector"
+        ]
+      },
+      "ALU_0_R1": {
+        "ports": [
+          "ALU_0/R",
+          "two2one_mux_8_3/A"
+        ]
+      },
+      "count_leading_ones_0_CLO_out": {
+        "ports": [
+          "count_leading_ones_0/CLO_out",
+          "two2one_mux_8_3/B"
+        ]
+      },
+      "loading_mux_0_R": {
+        "ports": [
+          "loading_mux_0/R",
+          "register_file_8_0/WriteData"
+        ]
+      },
+      "Control_Unit_8_0_MemtoReg": {
+        "ports": [
+          "Control_Unit_8_0/MemtoReg",
+          "loading_mux_0/Selector"
+        ]
+      },
+      "Memory_Data_Register_0_MemRegOut": {
+        "ports": [
+          "Memory_Data_Register_0/MemRegOut",
+          "loading_mux_0/B"
+        ]
+      },
+      "ALUOut_8_0_ALUOut": {
+        "ports": [
+          "ALUOut_8_0/ALUOut",
+          "four2three_mux_8_0/B",
+          "two2one_mux_8_0/B",
+          "loading_mux_0/A"
+        ]
+      },
+      "Multiplier_32_bit_0_R": {
+        "ports": [
+          "Multiplier_32_bit_0/R",
+          "xlslice_0/Din",
+          "xlslice_1/Din"
+        ]
+      },
+      "Multiplier_32_bit_0_DONE": {
+        "ports": [
+          "Multiplier_32_bit_0/DONE",
+          "Control_Unit_8_0/DONE_FLAG"
+        ]
+      },
+      "xlslice_0_Dout": {
+        "ports": [
+          "xlslice_0/Dout",
+          "HILO_reg_0/D"
+        ]
+      },
+      "xlslice_1_Dout": {
+        "ports": [
+          "xlslice_1/Dout",
+          "HILO_reg_1/D"
+        ]
+      },
+      "HILO_reg_0_Q": {
+        "ports": [
+          "HILO_reg_0/Q",
+          "loading_mux_0/Hi"
+        ]
+      },
+      "HILO_reg_1_Q": {
+        "ports": [
+          "HILO_reg_1/Q",
+          "loading_mux_0/Lo"
+        ]
+      },
+      "Control_Unit_8_0_HIEN": {
+        "ports": [
+          "Control_Unit_8_0/HIEN",
+          "HILO_reg_0/EN"
+        ]
+      },
+      "Control_Unit_8_0_LOIN": {
+        "ports": [
+          "Control_Unit_8_0/LOEN",
+          "HILO_reg_1/EN"
+        ]
+      },
+      "Control_Unit_8_0_MultEN": {
+        "ports": [
+          "Control_Unit_8_0/MultEN",
+          "Multiplier_32_bit_0/RST"
+        ]
+      },
+      "CPU_memory_0_dataOut": {
+        "ports": [
+          "MemoryDataIn",
+          "Memory_Data_Register_0/MemData",
+          "Instruction_Register_0/MemData"
+        ]
+      }
+    }
+  }
+}
